@@ -2,6 +2,33 @@
 
 A Django-based web application for managing student, staff, department, and attendance information for St Jaga's College.
 
+
+## Database
+
+The project uses SQLite by default (`db.sqlite3` in the root folder). You can switch to MySQL or PostgreSQL by editing the `DATABASES` setting in `sms/settings.py`.
+
+To set up the database:
+1. Run migrations:
+   ```
+   python manage.py migrate
+   ```
+2. (Optional) Change database engine in `sms/settings.py` for MySQL/PostgreSQL and update credentials.
+3. Media files (images, etc.) are stored in the `media/` folder.
+
+## Project Preview
+
+After starting the server (`python manage.py runserver`), you can preview the project at:
+
+- Main page: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+- Student dashboard: [http://127.0.0.1:8000/dashboard/<student-slug>/](http://127.0.0.1:8000/dashboard/<student-slug>/)
+- Staff dashboard: [http://127.0.0.1:8000/staff/dashboard/<staff-slug>/](http://127.0.0.1:8000/staff/dashboard/<staff-slug>/)
+- Admin panel: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
+### Screenshots & Demo
+
+You can add screenshots of the dashboard, attendance charts, and department pages here for a visual preview. Optionally, include a GIF or video showing navigation and features.
+
+---
 ## Features
 - Student and staff login and authentication
 - Department-wise dashboards for students and staff
