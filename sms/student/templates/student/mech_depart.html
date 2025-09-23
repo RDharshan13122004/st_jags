@@ -1,0 +1,85 @@
+{% extends "student/base.html" %}
+{% load static %}
+{% block head %}
+    <title>St Jaga's - Mechanical Department </title>
+    <link rel="stylesheet" href="{% static 'student/css/mech.css' %}">
+
+{% endblock head %}
+{% block content %}
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="mech-header" style="background-image: url('{{ img.image.url }}');">
+                <h1>Department of Mechanical Engineering</h1>
+                <p>Innovating, Designing, and Building the Future</p>
+            </header>
+        {% endif %}
+    {% endfor %}
+    
+
+    <section class="mech-about">
+        <h2>About Us</h2>
+        <p>The Department of Mechanical Engineering empowers students to become leaders in design, manufacturing, thermal engineering, and automation. Our industry-linked curriculum and advanced research labs foster practical skills and innovation-driven thinking.</p>
+    </section>
+
+    <section class="mech-vision">
+        <div class="vision-card">
+            <h3>Our Vision</h3>
+            <p>To achieve global recognition as a center of excellence in mechanical engineering education and research.</p>
+        </div>
+        <div class="vision-card">
+            <h3>Our Mission</h3>
+            <ul>
+                <li>Provide cutting-edge knowledge and practical skills.</li>
+                <li>Promote research in sustainable and green technologies.</li>
+                <li>Collaborate with industries to address real-world challenges.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="mech-courses">
+        <h2>Courses We Offer</h2>
+        <div class="courses-container">
+            <div class="course-card">Automobile Engineering</div>
+            <div class="course-card">Thermodynamics</div>
+            <div class="course-card">Robotics & Automation</div>
+            <div class="course-card">Manufacturing Processes</div>
+            <div class="course-card">Fluid Mechanics</div>
+            <div class="course-card">Material Science</div>
+        </div>
+    </section>
+
+    <section class="mech-faculty">
+        <h2>Our Faculty</h2>
+        <div class="faculty-container">
+            {% for staff in staff_detail %}
+                <div class="faculty-card">
+                    <img src="{{ staff.staff_photo.url }}" alt="{{ staff.staff_name }}">
+                    <h3>{{ staff.staff_name }}</h3>
+                    <p>{{ staff.staff_designation }}</p>
+                </div>
+            {% endfor %}          
+        </div>
+    </section>
+
+    <section class="mech-facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities-container">
+            {% for img in facilities_img %}
+                {% if img.section == 'Facilities' %}
+                    <div class="facility-item">
+                        <img src="{{ img.image.url }}" alt="Fluid Mechanics Lab">
+                        <h4>Fluid Mechanics Lab</h4>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <footer class="mech-footer">
+        <p>&copy; 2025 Mechanical Engineering Department. All rights reserved.</p>
+    </footer>
+{% endblock content %}
+{% block script %}
+    <script src="{% static 'student/js/mech.js' %}"></script>
+{% endblock script %}

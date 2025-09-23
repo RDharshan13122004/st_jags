@@ -1,0 +1,446 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* About Section Styling */
+.cs-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cs-about h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cs-about h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0d47a1;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.cs-about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cs-about h3 {
+    font-size: 28px;
+    color: #1565c0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cs-about ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cs-about ul li {
+    background-color: #e3f2fd;
+    padding: 15px 20px;
+    border-left: 5px solid #0d47a1;
+    border-radius: 8px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: default;
+}
+
+.cs-about ul li:hover {
+    background-color: #bbdefb;
+    transform: translateY(-5px);
+}
+
+.cs-about ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.cs-about {
+    margin-bottom: 40px; /* Adjust value as needed */
+}
+
+.cs-vision {
+    margin-top: 40px; /* Optional: for extra space */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cs-about {
+        padding: 40px 15px;
+    }
+
+    .cs-about h2 {
+        font-size: 30px;
+    }
+
+    .cs-about h3 {
+        font-size: 24px;
+    }
+
+    .cs-about p {
+        font-size: 16px;
+    }
+}
+
+.cs-header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cs-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.cs-header p {
+    font-size: 20px;
+}
+
+.cs-courses, .cs-faculty, .cs-gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+
+/* Vision & Mission Section Styling */
+.cs-vision {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f1f4f7, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cs-vision h2 {
+    font-size: 36px;
+    color: #0d47a1;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cs-vision h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #0d47a1;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vision-card {
+    background-color: #e3f2fd;
+    border-left: 5px solid #0d47a1;
+    border-radius: 12px;
+    padding: 30px 25px;
+    flex: 1 1 400px;
+    min-height: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    cursor: default;
+    position: relative;
+}
+
+.vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #bbdefb;
+}
+
+.vision-card h3 {
+    font-size: 28px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vision-card h3::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    background-color: #0d47a1;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.vision-card p, 
+.vision-card li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.vision-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vision-card li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.vision-card li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 18px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cs-vision h2 {
+        font-size: 30px;
+    }
+
+    .vision-card {
+        padding: 20px;
+    }
+
+    .vision-card h3 {
+        font-size: 24px;
+    }
+
+    .vision-card p,
+    .vision-card li {
+        font-size: 16px;
+    }
+}
+
+
+/* Courses Section Styling */
+.cs-courses {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cs-courses h2 {
+    font-size: 36px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cs-courses h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0d47a1;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.cs-courses .course-intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0d47a1;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #bbdefb;
+}
+
+.course-card h3 {
+    font-size: 24px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cs-courses h2 {
+        font-size: 30px;
+    }
+
+    .course-card h3 {
+        font-size: 20px;
+    }
+
+    .course-card p {
+        font-size: 15px;
+    }
+}
+
+
+.cs-faculty h2 {
+    font-size: 36px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cs-faculty h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0d47a1;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.faculty-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.faculty-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-10px);
+}
+
+.faculty-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cs-gallery h2 {
+    font-size: 36px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cs-gallery h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0d47a1;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.gallery-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery-slider img {
+    width: 300px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+.cs-footer {
+    background-color: #203a43;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}

@@ -1,0 +1,73 @@
+{% extends "student/base.html" %}
+{% load static %}
+{% block head %}
+    <title>St Jaga's - English Department</title>
+    <link rel="stylesheet" href="{% static 'student/css/eng.css' %}">
+{% endblock head %}
+{% block content %}
+    <!-- Header Section -->
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="english-header" style="background-image: url('{{ img.image.url }}');">
+                <div class="header-content">
+                    <h1>Department of English</h1>
+                    <p>Empowering Minds Through Language, Literature, and Culture</p>
+                </div>
+            </header>
+        {% endif %}
+    {% endfor %}
+
+    <!-- About Section -->
+    <section class="english-about">
+        <h2>About the Department</h2>
+        <p>The Department of English nurtures critical thinkers, articulate communicators, and creative writers. Our curriculum bridges classical literature with modern linguistics and cultural studies to prepare students for a global society.</p>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="english-highlights">
+        <h2>Why Choose Us?</h2>
+        <div class="highlight-list" id="highlightList">
+            <div class="highlight-card">Language Laboratories</div>
+            <div class="highlight-card">Creative Writing Workshops</div>
+            <div class="highlight-card">Literature Festivals</div>
+            <div class="highlight-card">Debate and Oratory Clubs</div>
+            <div class="highlight-card">Global Literature Studies</div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="english-courses">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>British Literature</li>
+            <li>American Literature</li>
+            <li>World Classics</li>
+            <li>Language and Linguistics</li>
+            <li>Creative Writing</li>
+            <li>Comparative Literature</li>
+        </ul>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="english-faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty-grid">
+            {% for staff in staff_detail %}
+                <div class="faculty-card">
+                    <img src="{{ staff.staff_photo.url }}" alt="{{ staff.staff_name }}">
+                    <h3>{{ staff.staff_name }}</h3>
+                    <p>{{ staff.staff_designation }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 English Department. All rights reserved.</p>
+    </footer>
+{% endblock content %}
+{% block script %}
+    <script src="{% static 'student/js/eng.js' %}"></script>
+{% endblock script %}
+    

@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    
+    {% endblock head %}
+    <!--<link rel="icon" href="" type="image/png">-->
+</head>
+
+<body>
+
+    {% block content %}
+
+    {% endblock content%}
+
+    <!-- Inactive Message -->
+    <div class="inactive-message" id="inactiveMessage">You seem inactive. Please continue exploring!</div>
+
+    {% block script %}
+
+    {% endblock script %}
+
+    <!-- Inactivity Detection Script -->
+    <script>
+        let warningTimeout;
+
+        function resetTimer() {
+            clearTimeout(warningTimeout);
+            document.getElementById('inactiveMessage').style.display = 'none';
+            warningTimeout = setTimeout(showInactiveMessage, 10000); // 10 seconds
+        }
+
+        function showInactiveMessage() {
+            document.getElementById('inactiveMessage').style.display = 'block';
+        }
+
+        // Reset timer on user interaction
+        window.onload = resetTimer;
+        document.onmousemove = resetTimer;
+        document.onkeypress = resetTimer;
+        document.onscroll = resetTimer;
+    </script>
+    
+
+</body>
+
+</html>

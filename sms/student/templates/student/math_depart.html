@@ -1,0 +1,79 @@
+{% extends "student/base.html" %}
+{% load static %}
+{% block head %}
+    <title>St Jaga's - BSC Mathematics Department </title>
+    <link rel="stylesheet" href="{% static 'student/css/math.css' %}">
+{% endblock head %}
+{% block content %}
+    <!-- Header -->
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="math-header" style="background-image: url('{{ img.image.url }}');">
+                <div class="header-content">
+                    <h1>Department of Mathematics</h1>
+                    <p>Exploring the Beauty of Patterns, Logic, and Structures</p>
+                </div>
+            </header>
+        {% endif %}
+    {% endfor %}
+
+    <!-- About -->
+    <section class="math-about">
+        <h2>About Us</h2>
+        <p>Our Mathematics Department empowers students to delve into the world of pure and applied mathematics, nurturing logical reasoning, problem-solving, and analytical thinking. We foster a learning environment that connects theory with real-world applications.</p>
+    </section>
+
+    <!-- Specializations -->
+    <section class="math-specializations">
+        <h2>Specializations</h2>
+        <div class="specializations-list">
+            <div class="spec-card">Pure Mathematics</div>
+            <div class="spec-card">Applied Mathematics</div>
+            <div class="spec-card">Statistics</div>
+            <div class="spec-card">Operations Research</div>
+            <div class="spec-card">Mathematical Modeling</div>
+            <div class="spec-card">Cryptography</div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="math-courses">
+        <h2>Courses We Offer</h2>
+        <ul>
+            <li>Linear Algebra</li>
+            <li>Calculus and Differential Equations</li>
+            <li>Real and Complex Analysis</li>
+            <li>Discrete Mathematics</li>
+            <li>Statistics and Probability</li>
+            <li>Mathematical Programming</li>
+        </ul>
+    </section>
+
+    <!-- Faculty -->
+    <section class="math-faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty-grid">
+            {% for staff in staff_detail %}
+                <div class="faculty-card">
+                    <img src="{{ staff.staff_photo.url }}" alt="{{ staff.staff_name }}">
+                    <h3>{{ staff.staff_name }}</h3>
+                    <p>{{ staff.staff_designation }}</p>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </section>
+
+    <!-- Math Quote -->
+    <section class="math-quote">
+        <blockquote>"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." — William Paul Thurston</blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mathematics Department. All rights reserved.</p>
+    </footer>
+{% endblock content %}
+{% block script %}
+    <script src="{% static 'student/js/math.js' %}"></script>
+{% endblock script %}

@@ -1,0 +1,29 @@
+        <div class="staff-timetable-container">
+            <h2 class="timetable-title">My Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Day / Period</th>
+                        {% for p in "123456" %}
+                        <th>Period {{ p }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for day,periods in timetable.items %}
+                        <tr>
+                            <th> {{day}} </th>
+                            {% for period in periods %}
+                                <td>
+                                    {% if period %}
+                                        {{ period|safe }}
+                                    {% else %}
+                                        <span class="empty-period">Free</span>
+                                    {% endif %}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>

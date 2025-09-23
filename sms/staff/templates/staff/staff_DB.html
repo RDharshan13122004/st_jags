@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="{% static 'staff/css/staff_DB.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="staff-navbar">
+        <div class="staff-navbar-left">
+            <button class="staff-menu-btn" id="staffMenuBtn">☰</button>
+            <h1>Staff Dashboard</h1>
+        </div>
+        {% if staff.staff_photo.url %}
+            <img src="{{ staff.staff_photo.url }}" alt="Staff Photo" class="staff-photo">
+        {% else %}
+            <img src="static/male.jpeg" alt="Staff Photo" class="staff-photo">
+        {% endif %}
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="staff-sidebar hidden" id="staffSidebar">
+        <ul>
+            <br><br>
+            <li><a href="{% url "staff:staff_dashboard" slug=staff.slug %}">Dashboard</a></li>
+            <li><a href="?section=student_records">Student Records</a></li>
+            <li><a href="?section=attendance_entry">Attendance</a></li>
+            <li><a href="?section=results_entry">Result Entry</a></li>
+            <li><a href="{% url 'staff:staff_profile' slug=staff.slug %}">Profile</a></li>
+            <li><a href="{% url 'staff:staff_logout' %}">Logout</a></li>
+            <li><a href="#" id="staffCloseSidebar">✖ Close</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="staff-main">
+        <section class="staff-welcome">
+            <h2>Welcome Back, {{ staff.staff_name | default:"Staff" }}</h2>
+            <p>Manage your courses, track student progress, and more.</p>
+        </section>
+
+        <section class="staff-cards">
+            <div class="staff-card">
+                <h3>Total Courses</h3>
+                <p>5</p>
+            </div>
+            <div class="staff-card">
+                <h3>Students Enrolled</h3>
+                <p>120</p>
+            </div>
+            <div class="staff-card">
+                <h3>Pending Assignments</h3>
+                <p>8</p>
+            </div>
+        </section>
+
+        {% if not show_section %}
+            {% include "staff/include/timetable.html" %}
+        {% elif show_section == 'student_records' %}
+            {% include "staff/include/student_records.html" %}
+        {% elif show_section == 'attendance_entry' %}
+            {% include "staff/include/attendance_entry.html" %}
+        {% elif show_section == 'results_entry' %}
+            {% include "staff/include/results_entry.html" %}
+        
+        {% endif %}
+
+        <!-- Attendance Section -->
+        
+
+
+    </main>
+
+    <script src="{% static 'staff/js/staff_DB.js' %}"></script>
+</body>
+</html>

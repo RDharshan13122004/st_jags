@@ -1,0 +1,76 @@
+{% extends "student/base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>St Jaga's - EEE Department</title>
+    <link rel="stylesheet" href="{% static 'student/css/eee.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <!-- Header Section -->
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="eee-header" style="background-image: url('{{ img.image.url }}');">
+                <div class="header-overlay">
+                    <h1>Electrical and Electronics Engineering</h1>
+                    <p>Powering the World with Innovation</p>
+                </div>
+            </header>
+        {% endif %}
+    {% endfor %}
+    <!-- About Section -->
+    <section class="eee-about">
+        <h2>About Us</h2>
+        <p>The EEE Department prepares students for impactful careers in power systems, electronics, automation, and renewable energy. Our focus on real-world applications and cutting-edge research shapes the engineers of tomorrow.</p>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="eee-vision">
+        <div class="vision-card">
+            <h3>Our Vision</h3>
+            <p>To be a leader in electrical innovation, sustainability, and global engineering solutions.</p>
+        </div>
+        <div class="vision-card">
+            <h3>Our Mission</h3>
+            <ul>
+                <li>Provide excellence in education and hands-on training.</li>
+                <li>Promote research in smart grids, electronics, and green energy.</li>
+                <li>Collaborate with industries and government bodies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Courses Offered -->
+    <section class="eee-courses">
+        <h2>Courses We Offer</h2>
+        <div class="course-slider" id="courseSlider">
+            <div class="course-card">Power Systems</div>
+            <div class="course-card">Control Systems</div>
+            <div class="course-card">Embedded Systems</div>
+            <div class="course-card">Smart Grids</div>
+            <div class="course-card">Renewable Energy Technologies</div>
+            <div class="course-card">Electric Vehicle Engineering</div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="eee-facilities">
+        <h2>Our Facilities</h2>
+        <ul>
+            <li>High Voltage Research Labs</li>
+            <li>Automation and Robotics Labs</li>
+            <li>Renewable Energy Research Center</li>
+            <li>State-of-the-art Electronics Workshops</li>
+            <li>Modern Smart Grid Simulators</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 EEE Department. All rights reserved.</p>
+    </footer>
+
+{% endblock content %}
+{% block script %}
+    <script src="{% static 'student/js/eee.js' %}"></script>
+{% endblock script %}

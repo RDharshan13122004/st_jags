@@ -1,0 +1,142 @@
+{% extends "student/base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>St Jaga's - BE CSE Department</title>
+    <link rel="stylesheet" href="{% static 'student/css/cs.css' %}">
+{% endblock head %}
+{% block content %}
+    <!-- Header -->
+    <header class="cs-header">
+        <h1>Computer Science Department</h1>
+        <p>Innovating the Future</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="cs-about">
+        <h2>About the Computer Science Department</h2>
+        <p>
+            The <strong>Computer Science Department</strong> at [Your College Name] is committed to nurturing the next generation of technology leaders, innovators, and problem solvers. Since its establishment in [Founding Year], the department has been at the forefront of delivering <strong>high-quality education</strong> aligned with the evolving needs of the tech industry.
+        </p>
+
+        <p>
+            Our programs are designed to provide students with a strong foundation in <strong>theoretical concepts</strong> and extensive <strong>hands-on experience</strong> in programming, system design, artificial intelligence, cybersecurity, and emerging technologies.
+        </p>
+
+        <p>
+            With <strong>state-of-the-art laboratories</strong>, dedicated research centers, and access to the latest tools and technologies, students can explore their passion and push the boundaries of innovation.
+        </p>
+
+        <p>
+            The department maintains strong <strong>industry partnerships</strong> with leading companies to ensure our students are exposed to real-world challenges through internships, workshops, and collaborative projects.
+        </p>
+
+        <p>
+            We encourage students to participate in <strong>hackathons, coding contests, tech symposiums, and global conferences</strong>, helping them build leadership and teamwork skills beyond the classroom.
+        </p>
+
+        <h3>What Sets Us Apart?</h3>
+        <ul>
+            <li>💡 Cutting-edge curriculum focusing on modern technologies like AI, IoT, and Cloud Computing.</li>
+            <li>👩‍🏫 Expert faculty with significant industry and research experience.</li>
+            <li>🏢 Modern infrastructure with smart classrooms and high-performance computing labs.</li>
+            <li>🌏 Opportunities for global exposure through exchange programs and collaborations.</li>
+            <li>💼 Dedicated placement and career support with a strong track record of success.</li>
+        </ul>
+
+        <p>
+            Whether you aspire to be a software engineer, data scientist, researcher, or entrepreneur, the Computer Science Department at [Your College Name] is the launchpad for your success.
+        </p>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="cs-vision">
+        <h2>Our Vision & Mission</h2>
+        <div class="vision-container">
+            <div class="vision-card">
+                <h3>🌐 Our Vision</h3>
+                <p>To become a globally acclaimed center of excellence in <strong>computer science education, research, and innovation</strong>, empowering students to shape the digital future and solve global challenges with technological expertise and ethical responsibility.</p>
+            </div>
+            <div class="vision-card mission">
+                <h3>🚀 Our Mission</h3>
+                <ul>
+                    <li>Deliver <strong>cutting-edge education</strong> in Artificial Intelligence, Data Science, and Cloud Computing.</li>
+                    <li>Promote <strong>research, creativity, and entrepreneurial mindset</strong> through industry-integrated programs.</li>
+                    <li>Encourage <strong>real-world collaborations</strong> to solve pressing problems in technology and society.</li>
+                    <li>Foster a <strong>global perspective</strong> and prepare students to lead in an interconnected world.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Courses -->
+    <section class="cs-courses">
+        <h2>Courses We Offer</h2>
+        <p class="course-intro">
+            Our Computer Science Department offers a wide range of carefully curated courses that blend theoretical foundations with practical applications, ensuring our students are industry-ready and future-proof.
+        </p>
+        <div class="courses-container">
+            <div class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Explore intelligent systems, neural networks, and machine vision to build smarter technologies.</p>
+            </div>
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <p>Master algorithms that learn from data to power predictive models and automation systems.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Structures</h3>
+                <p>Understand efficient ways to organize, process, and store data for optimal performance.</p>
+            </div>
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn to build responsive, dynamic websites using modern frontend and backend technologies.</p>
+            </div>
+            <div class="course-card">
+                <h3>Cyber Security</h3>
+                <p>Protect systems and networks through ethical hacking, encryption, and threat mitigation strategies.</p>
+            </div>
+            <div class="course-card">
+                <h3>Cloud Computing</h3>
+                <p>Gain hands-on experience in deploying scalable, secure applications in cloud environments.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Faculty Showcase -->
+    <section class="cs-faculty">
+        <h2>Our Faculty</h2>
+        <div class="faculty-container">
+            {% for staff in staff_detail %}
+                <div class="faculty-card">
+                    <img src="{{ staff.staff_photo.url }}" alt="{{ staff.staff_name }}">
+                    <h4>{{ staff.staff_name }}</h4>
+                    <p>{{ staff.staff_designation }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Facilities Gallery -->
+    <section class="cs-gallery">
+        <h2>Facilities</h2>
+        <div class="gallery-slider" id="gallerySlider">
+            {% for img in facilities_img %}
+                <img src="{{img.image.url}}" alt="Lab 1">
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <footer class="cs-footer">
+        <h3>Contact Us</h3>
+        <p>Email: csdept@college.edu | Phone: +91-9876543210</p>
+        <p>&copy; 2025 Computer Science Department</p>
+    </footer>
+
+{% endblock content %}
+
+{% block script %}
+        <script src="{% static 'studentjs/cs.js' %}"></script>
+{% endblock script %}

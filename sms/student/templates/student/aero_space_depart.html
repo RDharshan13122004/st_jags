@@ -1,0 +1,173 @@
+{% extends "student/base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>St Jaga's - AERO SPACE Department</title>
+    <link rel="stylesheet" href="{% static "student/css/aero_space.css" %}">
+{% endblock head %}
+{% block content %}
+    <!-- Header Section -->
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %} 
+            <section class="aero-header" style="background-image: url('{{ img.image.url }}');">
+                <div class="header-content">
+                    <h1>Department of Aerospace Engineering</h1>
+                    <p>Exploring the Skies, Expanding the Horizons</p>
+                </div>
+            </section>
+        {% endif %}
+    {% endfor %}
+    <!-- About Section -->
+    <section class="aero-about" id="about">
+        <h2>About Us</h2>
+        <p>
+            The Aerospace Engineering Department is committed to shaping future aeronautical innovators. We offer a blend of theoretical expertise and hands-on experiences in aerodynamics, propulsion, avionics, and space technology.
+        </p>
+        <p>
+            Our graduates contribute to global aerospace advancements, from next-generation aircraft to deep-space exploration vehicles.
+        </p>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="aero-vision">
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Vision</h3>
+                </div>
+                <div class="vision-card-back">
+                    <p>To be a world-class center for aerospace education, research, and innovation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Mission</h3>
+                </div>
+                <div class="vision-card-back">
+                    <ul>
+                        <li>Deliver industry-focused aerospace education.</li>
+                        <li>Promote sustainable and space-grade technologies.</li>
+                        <li>Collaborate globally to solve aerospace challenges.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Vision</h3>
+                </div>
+                <div class="vision-card-back">
+                    <p>To be a world-class center for aerospace education, research, and innovation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Mission</h3>
+                </div>
+                <div class="vision-card-back">
+                    <ul>
+                        <li>Deliver industry-focused aerospace education.</li>
+                        <li>Promote sustainable and space-grade technologies.</li>
+                        <li>Collaborate globally to solve aerospace challenges.</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Vision</h3>
+                </div>
+                <div class="vision-card-back">
+                    <p>To be a world-class center for aerospace education, research, and innovation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="vision-card">
+            <div class="vision-card-inner">
+                <div class="vision-card-front">
+                    <h3>Our Mission</h3>
+                </div>
+                <div class="vision-card-back">
+                    <ul>
+                        <li>Deliver industry-focused aerospace education.</li>
+                        <li>Promote sustainable and space-grade technologies.</li>
+                        <li>Collaborate globally to solve aerospace challenges.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <!-- Courses Section -->
+    <section class="aero-courses" id="courses">
+        <h2>Courses We Offer</h2>
+        <div class="courses-container">
+            <div class="course-card">
+                Aerodynamics
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                Aircraft Structures
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                Propulsion Systems
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                Flight Mechanics
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                Spacecraft Design
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+            <div class="course-card">
+                Avionics
+                <div class="course-details">
+                    <p>This course covers the principles of flight, airflow dynamics, and the design of efficient aerodynamic structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Facilities Section -->
+    <section class="aero-facilities" id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities-gallery">
+            {% for img in facilities_img %}
+                {% if img.section == 'Facilities' %}
+                    <img src="{{ img.image.url }}" alt="Wind Tunnel Lab">
+
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    
+    <footer class="aero-footer">
+        <p>&copy; 2025 Aerospace Engineering Department. All Rights Reserved.</p>
+    </footer>
+    
+{% endblock content %}
+{% block script %}
+    <script src="{% static "student/js/aero_space.js" %}"></script>
+{% endblock script %}

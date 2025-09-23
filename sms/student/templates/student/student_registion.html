@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f8ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2b3e6c;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    input[type="file"] {
+      padding: 4px;
+    }
+
+    button {
+      background: #2b3e6c;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1a2850;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: 15px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form action="" method="POST" enctype="multipart/form-data"> 
+      {% csrf_token %}
+      
+      <label>Roll No:</label>
+      <input type="number" name="roll_no" required>
+
+      <label>Photo:</label>
+      <input type="file" name="photo" accept="image/*">
+
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Father's Name:</label>
+      <input type="text" name="father_name" required>
+
+      <label>Mother's Name:</label>
+      <input type="text" name="mother_name" required>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="Dob" max="{{ today_date }}" required>
+
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option value="">-- Select --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+      <label>Address:</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <label>10th School Name:</label>
+      <input type="text" name="Education_10th" required>
+
+      <label>10th Marks (%):</label>
+      <input type="number" step="0.01" name="marks_10th" required>
+
+      <label>12th School Name:</label>
+      <input type="text" name="Education_12th" required>
+
+      <label>12th Marks (%):</label>
+      <input type="number" step="0.01" name="marks_12th" required>
+
+      <label>Department Choice:</label>
+      <select name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="BCA">BCA</option>
+        <option value="EEE">EEE</option>
+        <option value="English">English</option>
+        <option value="Mathematics">Mathematics</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

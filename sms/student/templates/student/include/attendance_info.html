@@ -1,0 +1,141 @@
+{% load static %}
+<section class="attendance-section">
+    <h2>Attendance Info</h2>
+    <form class="attendance-form" method="post">
+        {% csrf_token %}
+
+        <!-- Date Range -->
+        <div class="date-range">
+            {{ form.from_date.errors }}
+            <label for="from_date">From:</label>
+            <input type="date" id="from_date" name="from_date"
+                   value="{{ form.from_date.value|default_if_none:'' }}">
+
+            {{ form.to_date.errors }}
+            <label for="to_date">To:</label>
+            <input type="date" id="to_date" name="to_date"
+                   value="{{ form.to_date.value|default_if_none:'' }}">
+        </div>
+
+        <!-- View Options -->
+        <div class="view-options">
+            <label>
+                <input type="radio" name="view" value="table"
+                       {% if show_table %}checked{% endif %}> Table
+            </label>
+            <label>
+                <input type="radio" name="view" value="time"
+                       {% if show_time %}checked{% endif %}> Time Graph
+            </label>
+            <label>
+                <input type="radio" name="view" value="pie"
+                       {% if show_pie %}checked{% endif %}> Pie Graph
+            </label>
+            <label>
+                <input type="radio" name="view" value="plot"
+                       {% if show_plot %}checked{% endif %}> Plot
+            </label>
+        </div>
+
+        <button type="submit" class="btn-submit">View Attendance</button>
+    </form>
+
+    <div class="attendance-results">
+        <!-- Table -->
+        {% if show_table %}
+        <h3>Attendance Records</h3>
+        <table class="timetable-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Period</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in attendance_records %}
+                <tr>
+                    <td>{{ record.date }}</td>
+                    <td>{{ record.subject_id.subject_name }}</td>
+                    <td>{{ record.period }}</td>
+                    <td>
+                        {% if record.status == "Present" %}
+                            ✅ Present
+                        {% else %}
+                            ❌ Absent
+                        {% endif %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="4">No records found</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <!-- Time Graph -->
+        {% if show_time %}
+        <h3>Attendance Over Time</h3>
+        <canvas id="timeChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const timeCtx = document.getElementById("timeChart").getContext("2d");
+            new Chart(timeCtx, {
+                type: "line",
+                data: {
+                    labels: {{ chart_data.dates|safe }},
+                    datasets: [{
+                        label: "Attendance (1=Present, 0=Absent)",
+                        data: {{ chart_data.statuses|safe }},
+                        borderColor: "blue",
+                        fill: false,
+                        tension: 0.1
+                    }]
+                }
+            });
+        </script>
+        {% endif %}
+
+        <!-- Pie Graph -->
+        {% if show_pie %}
+        <h3>Attendance Distribution</h3>
+        <canvas id="pieChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const pieCtx = document.getElementById("pieChart").getContext("2d");
+            new Chart(pieCtx, {
+                type: "pie",
+                data: {
+                    labels: ["Present", "Absent"],
+                    datasets: [{
+                        data: [{{ chart_data.present }}, {{ chart_data.absent }}],
+                        backgroundColor: ["green", "red"]
+                    }]
+                }
+            });
+        </script>
+        {% endif %}
+
+        <!-- Bar Graph -->
+        {% if show_plot %}
+        <h3>Attendance by Classes</h3>
+        <canvas id="plotChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const plotCtx = document.getElementById("plotChart").getContext("2d");
+            new Chart(plotCtx, {
+                type: "bar",
+                data: {
+                    labels: ["Present", "Absent"],
+                    datasets: [{
+                        label: "Count",
+                        data: [{{ chart_data.present }}, {{ chart_data.absent }}],
+                        backgroundColor: ["blue", "orange"]
+                    }]
+                }
+            });
+        </script>
+        {% endif %}
+    </div>
+</section>

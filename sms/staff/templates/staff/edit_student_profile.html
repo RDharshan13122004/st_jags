@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Student Profile</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f2f4f8;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-preview {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .photo-preview img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 2px solid #ccc;
+    }
+
+    .submit-btn {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .submit-btn button {
+      background: #3f51b5;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn button:hover {
+      background: #2c3e90;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Edit Student Profile</h2>
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-section">
+          {{ form.name.label_tag }} {{ form.name }}
+      </div>
+      <div class="form-section">
+          {{ form.father_name.label_tag }} {{ form.father_name }}
+      </div>
+      <div class="form-section">
+          {{ form.mother_name.label_tag }} {{ form.mother_name }}
+      </div>
+      <div class="form-section">
+          {{ form.Dob.label_tag }} {{ form.Dob }}
+      </div>
+      <div class="form-section">
+          {{ form.gender.label_tag }} {{ form.gender }}
+      </div>
+      <div class="form-section">
+          {{ form.email.label_tag }} {{ form.email }}
+      </div>
+      <div class="form-section">
+          {{ form.phone.label_tag }} {{ form.phone }}
+      </div>
+      <div class="form-section">
+          {{ form.address.label_tag }} {{ form.address }}
+      </div>
+      <div class="form-section">
+          {{ form.Education_10th.label_tag }} {{ form.Education_10th }}
+      </div>
+      <div class="form-section">
+          {{ form.marks_10th.label_tag }} {{ form.marks_10th }}
+      </div>
+      <div class="form-section">
+          {{ form.Education_12th.label_tag }} {{ form.Education_12th }}
+      </div>
+      <div class="form-section">
+          {{ form.marks_12th.label_tag }} {{ form.marks_12th }}
+      </div>
+      <div class="form-section">
+          {{ form.class_id.label_tag }} {{ form.class_id }}
+      </div>
+      <div class="form-section">
+          {{ form.department_id.label_tag }} {{ form.department_id }}
+      </div>
+      <div class="form-section">
+          {{ form.slug.label_tag }} {{ form.slug }}
+      </div>
+      <div class="form-section">
+          {{ form.current_semester.label_tag }} {{ form.current_semester }}
+      </div>
+      <div class="photo-preview">
+          {{ form.photo.label_tag }} 
+          <img id="imgPreview" src="{{ form.photo.value.url }}" alt="Preview">
+          {{ form.photo }}
+      </div>
+      <div class="submit-btn">
+        <button type="submit">Update Profile</button>
+      </div>
+</form>
+
+  </div>
+
+  <script>
+    function previewPhoto(event) {
+      const img = document.getElementById("imgPreview");
+      img.src = URL.createObjectURL(event.target.files[0]);
+    }
+  </script>
+
+</body>
+</html>

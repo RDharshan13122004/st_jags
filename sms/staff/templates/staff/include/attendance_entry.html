@@ -1,0 +1,111 @@
+
+    {% comment %} 
+        <section class="attendance-section">
+            <h2>Attendance Entry</h2>
+
+            <div class="class-cards-container">
+                
+                <!-- Example Card -->
+                <div class="class-card" onclick="showAttendanceForm('class-1')">
+                <h3>BCA - Semester 2</h3>
+                <p><strong>Date:</strong> 29-07-2025</p>
+                <p><strong>Period:</strong> 2nd</p>
+                <span class="status pending">Pending</span>
+                </div>
+
+                <div class="class-card" onclick="showAttendanceForm('class-2')">
+                <h3>MECH - Semester 5</h3>
+                <p><strong>Date:</strong> 29-07-2025</p>
+                <p><strong>Period:</strong> 4th</p>
+                <span class="status completed">Completed</span>
+                </div>
+                <!-- Repeat for more cards -->
+            </div>
+
+            <!-- Attendance Table Section (Initially Hidden) -->
+            <div class="attendance-form" id="class-1" style="display: none;">
+                <h3>Attendance: BCA - Semester 2 | Period 2</h3>
+                <form method="post">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Student Name</th>
+                        <th>Present</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>John Doe</td>
+                        <td><input type="checkbox" name="attendance_1001" checked></td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Jane Smith</td>
+                        <td><input type="checkbox" name="attendance_1002"></td>
+                    </tr>
+                    <!-- More rows -->
+                    </tbody>
+                </table>
+                <button type="submit">Submit Attendance</button>
+                </form>
+            </div>
+        </section> 
+        {% endcomment %}
+
+    <section class="attendance-section">
+        <h2>Attendance Entry</h2>
+
+        <div class="class-cards-container">
+            {% for card in class_cards %}
+                <div class="class-card" onclick="showAttendanceForm('{{ card.id }}')">
+                    <h3>{{ card.class_name }} - Semester {{ card.semester }}</h3>
+                    <p><strong>Date:</strong> {{ card.date }}</p>
+                    <p><strong>Department:</strong>{{ card.department_id }}</p>
+                    <p><strong>Period:</strong> {{ card.period }}{% if card.period == 1 %}st{% elif card.period == 2 %}nd{% elif card.period == 3 %}rd{% else %}th{% endif %}</p>
+                    <span class="status {{ card.status }}">{{ card.status|capfirst }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        {% for card in class_cards %}
+            {% if card.status == 'pending' %}
+                <div class="attendance-form" id="{{ card.id }}" style="display: none;">
+                    <h3>Attendance: {{ card.class_name }} - Semester {{ card.semester }} | Period {{ card.period }} | Date: {{card.date}}</h3>
+                    <form method="post">
+                        {% csrf_token %} 
+                        <!-- Attendance Form -->
+                        <input type="hidden" name="form_type" value="attendance">
+                        
+                        <input type="hidden" name="class_id" value="{{ card.class_id }}">
+                        <input type="hidden" name="subject_id" value="{{ card.subject_id }}">
+                        <input type="hidden" name="department_id" value="{{ card.department_id }}">
+                        <input type="hidden" name="date" value="{{ card.date }}">
+                        <input type="hidden" name="period" value="{{ card.period }}"> 
+                
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Roll No</th>
+                                    <th>Student Name</th>
+                                    <th>Present</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for student in card.students %}
+                                    <tr>
+                                        <td>{{ student.roll_no }}</td>
+                                        <td>{{ student.name }}</td>
+                                        <td><input type="checkbox" name="attendance_{{ student.roll_no }}"></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        
+                        <button type="submit">Submit Attendance</button>
+                    </form>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+    </section> 

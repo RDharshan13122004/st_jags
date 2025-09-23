@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff Profile</title>
+  <link rel="stylesheet" href="{% static 'staff/css/staff_profile.css' %}" />
+</head>
+<body>
+  <div class="profile-container">
+    <div class="card fade-in">
+      <div class="profile-photo">
+        <img src="{{ staff.staff_photo.url }}" alt="Staff Photo">
+      </div>
+      <div class="profile-info">
+        <h2>{{ staff.name }}</h2>
+        <p><strong>ID:</strong> {{ staff.staff_id }}</p>
+        <p><strong>Designation:</strong> {{ staff.staff_designation }}</p>
+        <p><strong>Email:</strong> {{ staff.staff_email }}</p>
+        <p><strong>Phone:</strong> {{ staff.staff_phone }}</p>
+        <p><strong>DOB:</strong> {{ staff.staff_DOB }}</p>
+        <p><strong>Gender:</strong> {{ staff.gender }}</p>
+        <p><strong>Address:</strong> {{ staff.staff_address }}</p>
+        <p><strong>Department:</strong> {{ staff.department_id.department_name }}</p>
+        {% if staff.class_id %}
+          <p><strong>Class In-charge:</strong> {{ staff.class_id.class_name }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'staff/js/staff_profile.js' %}"></script>
+</body>
+</html>

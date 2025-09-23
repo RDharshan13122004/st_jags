@@ -1,0 +1,513 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.staff-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.staff-navbar h1 {
+    font-size: 24px;
+}
+
+.staff-menu-btn {
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.staff-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.staff-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #393e46;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.staff-sidebar.show {
+    transform: translateX(0);
+}
+
+.staff-sidebar ul {
+    list-style: none;
+}
+
+.staff-sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #4e555b;
+}
+
+.staff-sidebar ul li a:hover {
+    background-color: #4e555b;
+}
+
+/* Main Content */
+.staff-main {
+    padding: 100px 30px 30px 30px;
+}
+
+.staff-welcome h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.staff-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.staff-card {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.staff-card h3 {
+    font-size: 18px;
+    color: #393e46;
+    margin-bottom: 10px;
+}
+
+.staff-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.staff-announcements h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.staff-announcements ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #222;
+}
+
+.staff-timetable-container {
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.timetable-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1d4ed8;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.timetable th {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+.timetable td {
+  font-size: 14px;
+}
+
+.class-name {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-title {
+    font-size: 22px;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .class-name {
+    font-size: 10px;
+  }
+}
+
+
+
+.student-records-section {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.student-records-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.student-search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-search-bar input {
+  padding: 10px 14px;
+  width: 60%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.student-search-bar input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(59,130,246,0.3);
+}
+
+.student-records-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  overflow-x: auto;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.student-records-table th, .student-records-table td {
+  padding: 14px 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.student-records-table thead {
+  background-color: #2563eb;
+  color: white;
+}
+
+.student-records-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.student-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.attendance-section {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.class-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.class-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.class-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.class-card h3 {
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.status.pending {
+  background-color: #f59e0b;
+}
+
+.status.completed {
+  background-color: #10b981;
+}
+
+.attendance-form {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.attendance-form table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.attendance-form th,
+.attendance-form td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.attendance-form button:hover {
+  background-color: #1d4ed8;
+}
+
+
+  .result-entry-section {
+    padding: 10px;
+  }
+
+  .result-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+  }
+
+  .result-card h3 {
+    margin: 0;
+  }
+
+  .enter-result-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .enter-result-btn:hover {
+    background: #0056b3;
+  }
+
+  /* The expanding section */
+  .student-section {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    border-radius: 5px;
+  }
+  .student-section.open {
+    padding: 15px;
+    max-height: 600px; /* big enough to fit forms */
+  }
+
+  .student-section form {
+    margin-top: 10px;
+  }
+
+  .student-section label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .student-section input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+  }
+
+  .student-section button {
+    margin-top: 15px;
+    padding: 8px 14px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .student-section button:hover {
+    background: #1e7e34;
+  }
+
+/* Result */
+.result-entry-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.result-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.enter-result-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.enter-result-btn:hover {
+  background: #0056b3;
+}
+
+/* Student section hidden by default */
+.student-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  background: #fff;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #007bff;
+  position: relative;
+}
+
+.student-section.active {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: #000;
+}
+
+/* Form container */
+.marks-entry-container {
+    max-height: 80vh;     /* only take 80% of screen height */
+    overflow-y: auto;     /* enable vertical scroll */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Optional: smooth scrollbar */
+.marks-entry-container::-webkit-scrollbar {
+    width: 8px;
+}
+.marks-entry-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.marks-entry-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,44 @@
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul id="activity-list">
+                <li>Submitted Math Assignment - June 7</li>
+                <li>Received Grade for Science Project - June 6</li>
+                <li>New Message from Prof. Rao - June 5</li>
+            </ul>
+        </section>
+        <section class="dashboard-timetable">
+            <h2>Weekly Timetable</h2>
+            <div class="timetable-wrapper">
+                <table class="timetable-table">
+                <thead>
+                    <tr>
+                    <th>Day / Period</th>
+                    <th>1st Period</th>
+                    <th>2nd Period</th>
+                    <th>3rd Period</th>
+                    <th>4th Period</th>
+                    <th>5th Period</th>
+                    <th>6th Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for day, periods in timetable.items %}
+                        <tr>
+                            <th>{{day}}</th>
+                            {% for period in periods  %}
+                                <td>
+                                    {% if period %}
+                                        {{period|safe}}
+                                        {% else %}
+                                        <span class="empty-period">---</span>
+                                    {% endif %}
+                                </td>
+                            {% endfor %}    
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </section>

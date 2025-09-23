@@ -1,0 +1,88 @@
+{% extends "student/base.html" %}
+{% load static %}
+
+{% block head %}
+<title>St Jaga's - BCA Department</title>
+<link rel="stylesheet" href="{% static "student/css/bca.css" %}">
+{% endblock head %}
+{% block content %}
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="bca-header" style="background-image: url('{{ img.image.url }}');">
+                <div class="overlay">
+                    <h1>Department of Computer Applications (BCA)</h1>
+                    <p>Empowering Technology Leaders of Tomorrow</p>
+                </div>
+            </header>
+        {% endif %}
+    {% endfor %}
+
+    <!-- About Section -->
+    <section class="bca-about">
+        <h2>About the Department</h2>
+        <p>The BCA Department provides a solid foundation in computer applications, programming, and software development. Our goal is to nurture professionals who are industry-ready and innovative thinkers.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="bca-courses">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>Web Technologies</li>
+            <li>Mobile App Development</li>
+            <li>Data Analytics</li>
+            <li>Cyber Security</li>
+            <li>Artificial Intelligence</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="bca-slider">
+        <h2>Campus & Labs</h2>
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                {% for img in facilities_img %}
+                    {% if img.section == "Facilities" %}
+                        <img src="{{ img.image.url }}" alt="Lab {{ forloop.counter }}">
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Facilities Gallery -->
+    <section class="bca-gallery">
+        <h2>Our Facilities</h2>
+        
+        <div class="gallery">
+            {% for img in facilities_img %}
+                {% if img.section == "Facilities" %}
+                    <img src="{{ img.image.url }}" alt="Library">
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+    </section>
+
+    <!-- Interactive Info -->
+    <section class="bca-highlights">
+        <h2>Why Choose BCA With Us?</h2>
+        <ul id="highlightList">
+            <li>Industry-Linked Curriculum</li>
+            <li>Internship Opportunities</li>
+            <li>Global Certifications Support</li>
+            <li>Experienced Faculty</li>
+            <li>Strong Placement Network</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bca-footer">
+        <p>&copy; 2025 BCA Department, All Rights Reserved.</p>
+    </footer>
+{% endblock content %}
+{% block script %}
+    <script src="{% static 'student/js/bca.js' %}"></script>
+{% endblock script %}

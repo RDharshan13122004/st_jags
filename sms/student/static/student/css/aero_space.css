@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+header {
+    background-color: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: circular logo */
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff6600;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+.login-button a {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-button a:hover {
+    background-color: #e65c00;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.hero.fade {
+    opacity: 0;
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+    text-shadow: 0 0 5px #38bdf8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Animated Gradient Header */
+/* .aero-header {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #0ea5e9, #06b6d4);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+} */
+
+.aero-header {
+    background-image: var(--aero-bg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background-position 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.aero-header::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for better text contrast */
+    z-index: 1;
+}
+
+.aero-header h1,
+.aero-header p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.aero-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.aero-header p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.header-content {
+    color: white;
+    max-width: 800px;
+    animation: fadeSlide 1.5s ease;
+}
+
+.explore-button {
+    padding: 12px 25px;
+    background: #38bdf8;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+.explore-button:hover {
+    transform: scale(1.1);
+    background: #0ea5e9;
+    box-shadow: 0 0 25px #0ea5e9;
+}
+
+/* About Section */
+.aero-about {
+    padding: 80px 20px;
+    background: #1e293b;
+    text-align: center;
+}
+
+.aero-about p {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Vision & Mission with Flip Card */
+.aero-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Add this to create space between the cards */
+    padding: 60px 20px;
+    background-color: #0f172a;
+}
+
+.vision-card {
+    perspective: 1000px;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.vision-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.vision-card:hover .vision-card-inner {
+    transform: rotateY(180deg);
+}
+
+.vision-card-front, .vision-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #1e40af;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.vision-card-back {
+    transform: rotateY(180deg);
+    background: #0ea5e9;
+}
+
+/* Courses with Slide Reveal */
+.aero-courses {
+    padding: 80px 20px;
+    background: #1e293b;
+    text-align: center;
+}
+
+.course-card {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #38bdf8;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.course-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 20px #0ea5e9;
+}
+
+.course-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 10px;
+    color: #cbd5e1;
+}
+
+/* Facilities Image Zoom */
+.aero-facilities {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    text-align: center;
+}
+
+.facilities-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.facilities-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: zoom-in;
+}
+
+.facilities-gallery img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px #38bdf8;
+}
+
+/* Footer */
+.aero-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+/* Animations */
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}

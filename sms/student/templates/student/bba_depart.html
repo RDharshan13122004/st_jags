@@ -1,0 +1,206 @@
+{% extends "student/base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>St Jaga's - BBA Department</title>
+    <link rel="stylesheet" href="{% static "student/css/bba.css" %}">
+{% endblock head %}
+
+{% block content %}
+    <!-- Header Section -->
+    {% for img in facilities_img %}
+        {% if img.section == "Header" %}
+            <header class="bba-header" style="background-image: url('{{ img.image.url }}');">
+                <h1>Department of Business Administration</h1>
+                <p>Where Leaders Are Shaped and Futures Are Built</p>
+            </header>
+        {% endif %}
+    {% endfor %}
+
+    <!-- About Section -->
+    <section class="bba-about">
+        <h2>About the BBA Department</h2>
+        <p>The BBA Department focuses on developing innovative, ethical, and globally competent business leaders. Our curriculum is a perfect blend of academic rigor and industry exposure.</p>
+        <p>We provide students with hands-on training, real-world business projects, and mentorship from experienced faculty and business leaders.</p>
+    </section>
+
+    <!-- Specializations Section -->
+    <section class="bba-specializations">
+        <h2 class="header-white">Specializations Offered</h2>
+        <div class="specialization-list">
+            <div class="specialization-card">Marketing Management</div>
+            <div class="specialization-card">Financial Management</div>
+            <div class="specialization-card">Human Resource Management</div>
+            <div class="specialization-card">Operations & Supply Chain</div>
+            <div class="specialization-card">International Business</div>
+            <div class="specialization-card">Entrepreneurship</div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="bba-vision-mission">
+        <div class="vision-box">
+            <h3>Our Vision</h3>
+            <p>To produce globally recognized business leaders who drive innovation and ethical practices in the corporate world.</p>
+        </div>
+        <div class="mission-box">
+            <h3>Our Mission</h3>
+            <ul>
+                <li>Deliver industry-relevant, high-quality education.</li>
+                <li>Promote leadership, entrepreneurship, and ethical values.</li>
+                <li>Encourage global collaboration and exposure.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="bba-faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty-list">
+            {% for staff in staff_detail %}
+                <div class="faculty-card">
+                    <h4>{{ staff.staff_name }}</h4>
+                    <p>{{ staff.staff_designation }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="bba-facilities">
+        <h2>Our Facilities</h2>
+        <div class="facilities-container">
+
+            <div class="facility-card">
+                <div class="facility-inner">
+                    <div class="card-front">
+                        <h3>Business Simulation Labs</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Experience real-time business scenarios using modern simulation tools for decision-making, market competitions, and financial planning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-inner">
+                    <div class="card-front">
+                        <h3>Entrepreneurship Cell</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Our EDC nurtures start-up culture with seed funding, mentorship, networking, and regular pitch events for aspiring entrepreneurs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-inner">
+                    <div class="card-front">
+                        <h3>Industry Connect Centers</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Collaborate with top companies on live projects and industrial training to develop real-world business solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-inner">
+                    <div class="card-front">
+                        <h3>Smart Classrooms</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Advanced smart classrooms equipped with interactive boards and technology-driven tools for immersive learning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-inner">
+                    <div class="card-front">
+                        <h3>Digital Library</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Access thousands of journals, business databases, and digital resources 24/7 to support advanced research and learning.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Student Success Stories -->
+    <section class="bba-success-stories">
+        <h2>Student Success Stories</h2>
+
+        <div class="slider-container">
+            <div class="slider" id="storySlider">
+
+                <div class="slide">
+                    <h3>Aarav Mehta</h3>
+                    <p class="position">Management Trainee at Deloitte</p>
+                    <p class="details">Aarav excelled in strategic management and led several student projects that caught the attention of Deloitte’s recruitment team. His journey reflects academic excellence and leadership.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Sneha Kapoor</h3>
+                    <p class="position">Founder & CEO, KapStore</p>
+                    <p class="details">Sneha turned her entrepreneurial dream into reality by launching her e-commerce startup right after graduation, supported by our Entrepreneurship Cell and faculty mentorship.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Rohan Iyer</h3>
+                    <p class="position">Business Analyst at Amazon</p>
+                    <p class="details">Rohan’s analytical skills and hands-on experience with business simulations helped him crack Amazon’s competitive selection process, landing him a role as a Business Analyst.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Aarav Mehta</h3>
+                    <p class="position">Management Trainee at Deloitte</p>
+                    <p class="details">Aarav excelled in strategic management and led several student projects that caught the attention of Deloitte’s recruitment team. His journey reflects academic excellence and leadership.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Sneha Kapoor</h3>
+                    <p class="position">Founder & CEO, KapStore</p>
+                    <p class="details">Sneha turned her entrepreneurial dream into reality by launching her e-commerce startup right after graduation, supported by our Entrepreneurship Cell and faculty mentorship.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Rohan Iyer</h3>
+                    <p class="position">Business Analyst at Amazon</p>
+                    <p class="details">Rohan’s analytical skills and hands-on experience with business simulations helped him crack Amazon’s competitive selection process, landing him a role as a Business Analyst.</p>
+                </div>
+                
+                <div class="slide">
+                    <h3>Aarav Mehta</h3>
+                    <p class="position">Management Trainee at Deloitte</p>
+                    <p class="details">Aarav excelled in strategic management and led several student projects that caught the attention of Deloitte’s recruitment team. His journey reflects academic excellence and leadership.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Sneha Kapoor</h3>
+                    <p class="position">Founder & CEO, KapStore</p>
+                    <p class="details">Sneha turned her entrepreneurial dream into reality by launching her e-commerce startup right after graduation, supported by our Entrepreneurship Cell and faculty mentorship.</p>
+                </div>
+
+                <div class="slide">
+                    <h3>Rohan Iyer</h3>
+                    <p class="position">Business Analyst at Amazon</p>
+                    <p class="details">Rohan’s analytical skills and hands-on experience with business simulations helped him crack Amazon’s competitive selection process, landing him a role as a Business Analyst.</p>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+{% endblock content %}
+{% block script %}
+        <script src="{% static "student/js/bba.js" %}"></script>
+{% endblock script %}

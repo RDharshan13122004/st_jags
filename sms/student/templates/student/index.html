@@ -1,0 +1,180 @@
+{% extends "student/base.html" %}
+{% load static %}
+{% block head %}
+    <title>St Jaga's - Welcome</title>
+    <link rel="stylesheet" href="{% static "student/css/style.css" %}">
+{% endblock head %}
+
+
+{% block content %}
+
+    <!-- Header Section -->
+    {% include "student/include/header.html" %}
+
+    <!-- Hero Section -->
+    <div id="home" class="hero">
+        <h1>Welcome to St Jaga's</h1>
+        <p>Empowering Future Generations</p>
+        <a href="#admissions" class="cta-button">Apply Now</a>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>St Jaga's</strong>! We are dedicated to shaping the leaders and innovators of tomorrow. Since our founding in <strong>2004</strong>, we have provided exceptional education and a thriving campus environment.</p>
+
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>To be a globally recognized institution known for excellence, innovation, and societal contribution.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <ul>
+                        <li>Create a dynamic, inclusive, and enriching learning environment.</li>
+                        <li>Promote research, innovation, and entrepreneurship.</li>
+                        <li>Empower students with knowledge, skills, and strong values.</li>
+                        <li>Establish industry and global partnerships for mutual development.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>Highly qualified and supportive faculty members.</li>
+                        <li>Modern infrastructure and cutting-edge laboratories.</li>
+                        <li>Strong placement support with leading companies.</li>
+                        <li>Vibrant campus life with clubs, sports, and cultural events.</li>
+                        <li>Commitment to social responsibility and sustainability.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="join-message">Join us and be part of a community that encourages you to dream, learn, and achieve greatness!</p>
+        </div>
+    </section>
+
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments">
+        <h2>Departments</h2>
+        <div class="department-list">
+          <a href="{% url "student:cse_depart" %}" class="department-card">Computer Science</a>
+          <a href="{% url "student:mechanical_depart" %}" class="department-card">Mechanical Engineering</a>
+          <a href="{% url "student:eee_depart" %}" class="department-card">Electrical Engineering</a>
+          <a href="{% url "student:bba_depart" %}" class="department-card">Business Administration</a>
+          <a href="{% url "student:bca_depart" %}" class="department-card">Computer Application</a>
+          <a href="{% url "student:math_depart" %}" class="department-card">Mathematics</a>
+          <a href="{% url "student:aero_space_depart" %}" class="department-card">Aero Space Engineering</a>
+          <a href="{% url "student:eng_depart" %}" class="department-card">English</a>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions-section">
+        <div class="admissions-content">
+            <h2>Admissions</h2>
+            <p class="intro-text">Join a vibrant learning community that empowers future leaders and innovators. Here’s everything you need to know to begin your journey at <strong>St Jaga's</strong>.</p>
+
+            <div class="admissions-steps">
+                <div class="step-card">
+                    <h3>1. Eligibility Criteria</h3>
+                    <ul>
+                        <li>Minimum aggregate of 60% in qualifying examination.</li>
+                        <li>Valid scores in entrance exams (if applicable).</li>
+                        <li>Compliance with age and subject prerequisites.</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <h3>2. Admission Process</h3>
+                    <ul>
+                        <li>Step 1: Online application submission.</li>
+                        <li>Step 2: Entrance exam / merit review.</li>
+                        <li>Step 3: Personal interview or counseling session.</li>
+                        <li>Step 4: Payment of admission fees.</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <h3>3. Important Dates</h3>
+                    <ul>
+                        <li>Application Opens: March 1, 2025</li>
+                        <li>Application Closes: May 31, 2025</li>
+                        <li>Entrance Exam: June 15, 2025</li>
+                        <li>Counseling: July 1 - July 15, 2025</li>
+                        <li>Course Commencement: August 1, 2025</li>
+                    </ul>
+                </div>
+
+                <div class="step-card">
+                    <h3>4. Required Documents</h3>
+                    <ul>
+                        <li>Mark sheets (10th, 12th, UG if applicable)</li>
+                        <li>Entrance exam scorecard</li>
+                        <li>Transfer certificate</li>
+                        <li>ID proof (Aadhar, Passport, etc.)</li>
+                        <li>Recent passport size photographs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#" class="cta-button">Apply Now</a>
+        </div>
+    </section>
+
+
+    <!-- News and Events Section -->
+    <section id="news" class="news-section">
+        <div class="news-content">
+            <h2>News & Events</h2>
+            <p class="news-intro">Stay updated with the latest happenings, seminars, and celebrations at <strong>St Jaga's</strong>.</p>
+
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 15, 2025</div>
+                    <div class="timeline-details">
+                        <h3>Upcoming Seminar on AI</h3>
+                        <p>Join us for an insightful seminar on the advancements and future of Artificial Intelligence.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 1, 2025</div>
+                    <div class="timeline-details">
+                        <h3>Annual Sports Meet</h3>
+                        <p>Get ready for an exciting day filled with sports, competitions, and celebrations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">August 10, 2025</div>
+                    <div class="timeline-details">
+                        <h3>New Campus Inauguration</h3>
+                        <p>We are proud to announce the inauguration of our new state-of-the-art campus building.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Contact Info and Footer Section -->
+    {% include "student/include/footer.html" %}
+    
+{% endblock %}
+
+{% block script %}
+    <script>
+        window.heroImages = [
+            {% for img in page_image %}
+                "{{ img.image.url }}"{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        ];
+    </script>
+    <script src="{% static "student/js/slider.js" %}"></script>
+{% endblock script %}

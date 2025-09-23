@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ student.name }} - Profile</title>
+  <link rel="stylesheet" href="{% static 'student/css/student_profile.css' %}">
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="profile-card">
+    <div class="profile-header">
+        {% if student.photo.url %}
+        <img src="{{ student.photo.url }}" alt="Student Photo" class="profile-pic">
+        {% else %}
+        <img src="{% static 'student/images/default.png' %}" alt="Default Student Photo" class="profile-pic">
+        {% endif %}
+      
+      <h2>{{ student.name |default:"Student"}}</h2>
+      <p>Roll No: {{ student.roll_no }}</p>
+    </div>
+
+    <div class="profile-body">
+        <h3 onclick="toggleSection('personal')">Personal Details</h3>
+        <div class="info-grid section" id="personal">
+
+            <p><strong>Father's Name:</strong> {{ student.father_name |default:"N/A" }}</p>
+            <p><strong>Mother's Name:</strong> {{ student.mother_name |default:"N/A" }}</p>
+            <p><strong>Date of Birth:</strong> {{ student.Dob |default:"N/A" }}</p>
+            <p><strong>Gender:</strong> {{ student.gender |default:"N/A" }}</p>
+            <p><strong>Email:</strong> {{ student.email |default:"N/A" }}</p>
+            <p><strong>Phone:</strong> {{ student.phone |default:"N/A" }}</p>
+            <p><strong>Address:</strong> {{ student.address |default:"N/A" }}</p>
+        </div>
+
+        <h3 onclick="toggleSection('academic')">Academic Details</h3>
+        <div class="info-grid section" id="academic">
+            <p><strong>10th School:</strong> {{ student.Education_10th |default:"N/A" }}</p>
+            <p><strong>10th Marks:</strong> {{ student.marks_10th |default:"N/A" }}</p>
+            <p><strong>12th School:</strong> {{ student.Education_12th |default:"N/A" }}</p>
+            <p><strong>12th Marks:</strong> {{ student.marks_12th |default:"N/A" }}</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'student/js/profile.js' %}"></script>
+</body>
+</html>

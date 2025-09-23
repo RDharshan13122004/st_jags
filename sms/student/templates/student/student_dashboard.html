@@ -1,0 +1,58 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{% static 'student/css/student_DB.css' %}">
+    {% block head %}
+    
+    {% endblock head %}
+</head>
+<body>
+    <main class="main-content">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>Welcome, {{ student.name | default:"Student" }}</h1>
+            <div id="dateTime"></div>
+        </header>
+
+        <!-- Dashboard Widgets -->
+        <section class="widgets">
+            <div class="widget">
+                <h3>Attendance %</h3>
+                <p>6</p>
+            </div>
+            <div class="widget">
+                <h3>Day</h3>
+                <p>3</p>
+            </div>
+            <div class="widget">
+                <h3>Semester</h3>
+                <p>{{student.current_semester}}</p>
+            </div>
+            <div class="widget">
+                <h3>No. of Subjects</h3>
+                <p>{{subject_count}}</p>
+            </div>
+        </section>
+        {% block content %}
+        <!-- Sidebar -->
+        <!-- Header/Navbar -->
+        {% include "student/include/dashboard_header.html" %}
+
+        <!-- Main Content -->
+            {% if not show_section %}
+                {%include "student/include/timetable.html" %}
+            {% elif show_section == "results" %}
+                {% include "student/include/results.html" %}
+            {% elif show_section == "attendance" %}
+                {% include "student/include/attendance_info.html" %}
+            {% endif %}
+        {% endblock content %}
+    </main>
+    <script src="{% static 'student/js/student_DB.js' %}"></script>
+</body>
+</html>

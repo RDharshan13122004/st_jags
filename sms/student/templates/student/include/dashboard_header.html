@@ -1,0 +1,29 @@
+{% load static %}
+    <header class="navbar">
+        <div class="navbar-left">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <span>Student Dashboard</span>
+        </div>
+        <div class="navbar-right">
+            {% if student.photo.url %}
+                <img src="{{ student.photo.url }}" alt="Student Photo" class="student-photo">
+            {% else %}
+                <img src="{% static 'student/images/default.png' %}" alt="Default Student Photo" class="student-photo">
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar hidden" id="sidebar">
+        <nav>
+            <ul>
+                <br>
+                <li><a href="{% url 'student:student_dashboard' slug=student.slug %}">Dashboard</a></li>
+                <li><a href="?section=results">Results</a></li>
+                <li><a href="?section=attendance">Attendance Info</a></li>
+                <li><a href="{% url "student:student_profile" slug=student.slug %}">Profile</a></li>
+                <li><a href="{% url 'student:student_logout' %}">Logout</a></li>
+                <li><a href="#" id="closeSidebar">✖️</a></li>
+            </ul>
+        </nav>
+    </aside>

@@ -1,0 +1,47 @@
+        
+        <section class="student-records-section">
+            <h2>Student Records</h2>
+
+            <div class="student-search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, roll number, or department...">
+            </div>
+
+            <table class="student-records-table">
+                <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>View</th>
+                    {% if staff.class_id %}
+                        <th>Edit</th>
+                    {% endif %}
+                    
+                </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                {% for student in students_record %}
+                    <tr>
+                        <td><img src="{{student.photo.url}}" alt="Student Photo" class="student-img"></td>
+                        <td>{{student.roll_no}}</td>
+                        <td>{{student.name}}</td>
+                        <td>{{student.department_id.department_name}}</td>
+                        <td>{{student.email}}</td>
+                        <td>{{student.phone}}</td>
+                        <td>
+                            <a href="{% url "staff:student_profile_record" staff.slug student.slug %}" style="color: black"><i class="fa-solid fa-eye"></i></a>
+                        </td>
+                        {% if staff.class_id %}
+                            <td>
+                                <a href="{% url "staff:student_edit_record" staff.slug student.slug %}" style="color: black"><i class="fa-solid fa-pen-to-square"></i></a>
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+                <!-- More rows dynamically from Django -->
+                </tbody>
+            </table>
+        </section>

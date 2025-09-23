@@ -1,0 +1,65 @@
+<section class="result-entry-section">
+  <h2>Result Entry</h2>
+
+  {% for key, entry in results_entry_data.items %}
+    <div class="result-card" data-class="{{ entry.class_info.class_id }}" data-semester="{{ entry.subject.semester }}" data-subject="{{ entry.subject.subject_id }}">
+      <h3>Class: {{ entry.class_info.class_name }}</h3>
+      <p><strong>Semester:</strong> {{ entry.subject.semester }}</p>
+      <p><strong>Subject:</strong> {{ entry.subject.subject_name }}</p>
+      <button class="enter-result-btn">Enter Results</button>
+    </div>
+
+  <!-- Student entry form (hidden initially) -->
+  <div class="student-section marks-entry-container">
+    <button type="button" class="close-btn">×</button>
+    <form method="POST">
+      {% csrf_token %}
+      <!-- Results Form -->
+      <input type="hidden" name="form_type" value="results">
+      
+      <!-- marks entry inputs-->
+      <input type="hidden" name="class_id" value="{{ entry.class_info.class_id }}">
+      <input type="hidden" name="subject_id" value="{{ entry.subject.subject_id }}">
+      <input type="hidden" name="semester" value="{{ entry.subject.semester }}">
+      <input type="hidden" name="department_id" value="{{ entry.class_info.department_id.department_id }}">
+      {% for student in entry.students %}
+        <label>{{ student.first_name }} {{ student.last_name }} (Roll No: {{ student.roll_no }})</label>
+        <input type="number" name="marks_{{ student.roll_no }}" placeholder="Enter marks" required>
+      {% endfor %}
+
+      <button type="submit" class="save-btn">Save Results</button>
+    </form>
+  </div>
+  {% endfor %}
+</section>
+
+<script>
+    
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".enter-result-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Close all open sections first
+      document.querySelectorAll(".student-section").forEach(section => {
+        section.classList.remove("active");
+      });
+
+      // Open the one below the clicked card
+      const section = btn.closest(".result-card").nextElementSibling;
+      if (section && section.classList.contains("student-section")) {
+        section.classList.add("active");
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
+  // Handle close buttons
+  document.querySelectorAll(".student-section .close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.closest(".student-section").classList.remove("active");
+    });
+  });
+});
+
+</script>
