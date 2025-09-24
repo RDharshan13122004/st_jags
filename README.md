@@ -24,9 +24,10 @@ After starting the server (`python manage.py runserver`), you can preview the pr
 - Staff dashboard: [http://127.0.0.1:8000/staff/dashboard/<staff-slug>/](http://127.0.0.1:8000/staff/dashboard/<staff-slug>/)
 - Admin panel: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
-### Screenshots & Demo
+### Demo
+![DEMO1](assets/sms2.gif)
+![DEMO2](assets/sms3.gif)
 
-You can add screenshots of the dashboard, attendance charts, and department pages here for a visual preview. Optionally, include a GIF or video showing navigation and features.
 
 ---
 ## Features
