@@ -1,0 +1,393 @@
+subject_id,subject_name,credits,semester
+BCA101,Fundamentals of IT ,4,1
+BCA102,Programming in C,4,1
+BCA103,Digital Electronics,3,1
+BCA104,Mathematics I,3,1
+BCA105,English Communication,2,1
+BCA106,C Programming Lab,1,1
+BCA107,IT Lab (Office Tools),1,1
+BCA201,Data Structures using C,4,2
+BCA202,Operating Systems,4,2
+BCA203,Computer Architecture,3,2
+BCA204,Mathematics II,3,2
+BCA205,Environmental Studies,2,2
+BCA206,Data Structures Lab ,1,2
+BCA207,Linux Shell Programming Lab,1,2
+BCA301,Object-Oriented Programming (C++),4,3
+BCA302,Database Management Systems,4,3
+BCA303,Software Engineering,3,3
+BCA304,Web Programming,3,3
+BCA305,Organizational Behaviour,2,3
+BCA306,C++ Programming Lab,1,3
+BCA307,DBMS Lab,1,3
+BCA401,Java Programming ,4,4
+BCA402,Computer Networks,4,4
+BCA403,Numerical Methods ,3,4
+BCA404,Python Programming,3,4
+BCA405,Human Values & Ethics,2,4
+BCA406,Java Programming Lab,1,4
+BCA407,Python Programming Lab,1,4
+BCA501,Mobile App Development,4,5
+BCA502,Artificial Intelligence,4,5
+BCA503,Data Mining,3,5
+BCA504,Web Technologies (Advanced),3,5
+BCA505,Cyber Security,2,5
+BCA506,AI Lab,1,5
+BCA507,Mobile App Lab,1,5
+BCA601,Cloud Computing,4,6
+BCA602,Internet of Things,4,6
+BCA603,Project Work,3,6
+BCA604,Business Intelligence,3,6
+BCA605,Soft Skills,2,6
+BCA606,IoT Lab,1,6
+BCA607,Seminar & Viva,1,6
+BBA101,Principles of Management,4,1
+BBA102,Financial Accounting,4,1
+BBA103,Microeconomics,3,1
+BBA104,Quantitative Techniques,3,1
+BBA105,Business Communication,3,1
+BBA106,Business Law,4,1
+BBA107,IT for Business,3,1
+BBA201,Organizational Behaviour,4,2
+BBA202,Cost Accounting,4,2
+BBA203,Macroeconomics,3,2
+BBA204,Statistics for Management,3,2
+BBA205,Environmental Studies,3,2
+BBA206,Marketing Management,4,2
+BBA207,Managerial Communication,3,2
+BBA301,Human Resource Management,4,3
+BBA302,Operations Management,4,3
+BBA303,Corporate Accounting,3,3
+BBA304,Business Ethics,3,3
+BBA305,Production & Materials Management,3,3
+BBA306,Consumer Behaviour,4,3
+BBA307,Management Information Systems,3,3
+BBA401,Research Methodology,4,4
+BBA402,Financial Management,4,4
+BBA403,Sales & Distribution Management,3,4
+BBA404,Entrepreneurship Development,3,4
+BBA405,Indian Economy,3,4
+BBA406,Industrial Relations,4,4
+BBA407,Digital Marketing,3,4
+BBA501,Strategic Management,4,5
+BBA502,Investment Analysis,4,5
+BBA503,Service Marketing,3,5
+BBA504,International Business,3,5
+BBA505,Operations Research,3,5
+BBA506,E-Business,4,5
+BBA507,Corporate Social Responsibility,3,5
+BBA601,Project Management,4,6
+BBA602,Leadership Skills,4,6
+BBA603,Management Control Systems,3,6
+BBA604,Business Analytics,3,6
+BBA605,Export & Import Management,3,6
+BBA606,Start-up & Innovation,4,6
+BBA607,Internship/Project Report,3,6
+AERO101,Engineering Mathematics I,4,1
+AERO102,Engineering Physics,3,1
+AERO103,Introduction to Aerospace,3,1
+AERO104,Engineering Graphics,2,1
+AERO105,Basic Electrical Engineering,3,1
+AERO106,Workshop Practice,2,1
+AERO107,Communication Skills,3,1
+AERO201,Engineering Mathematics II,4,2
+AERO202,Thermodynamics,3,2
+AERO203,Fluid Mechanics,3,2
+AERO204,Materials Science,2,2
+AERO205,Programming for Engineers,3,2
+AERO206,Aircraft Systems and Instruments,2,2
+AERO207,CAD for Aerospace,3,2
+AERO301,Aerodynamics I,4,3
+AERO302,Aircraft Structures I,3,3
+AERO303,Propulsion I,3,3
+AERO304,Mechanics of Machines,2,3
+AERO305,Avionics Systems,3,3
+AERO306,Engineering Mathematics III,2,3
+AERO307,Open Elective I,3,3
+AERO401,Aerodynamics II,4,4
+AERO402,Aircraft Structures II,3,4
+AERO403,Propulsion II,3,4
+AERO404,Flight Mechanics I,2,4
+AERO405,Numerical Methods,3,4
+AERO406,Aerospace Lab I,2,4
+AERO407,Environmental Studies,3,4
+AERO501,Control Engineering,4,5
+AERO502,Flight Mechanics II,3,5
+AERO503,Aircraft Design I,3,5
+AERO504,Aerospace Propulsion Systems,2,5
+AERO505,Aircraft Systems Design,3,5
+AERO506,Research Methodology,2,5
+AERO507,Open Elective II,3,5
+AERO601,Spaceflight Mechanics,4,6
+AERO602,Computational Fluid Dynamics,3,6
+AERO603,Aircraft Design II,3,6
+AERO604,Helicopter Aerodynamics,2,6
+AERO605,Aerospace Materials,3,6
+AERO606,Industrial Training / Internship,2,6
+AERO607,Open Elective III,3,6
+AERO701,Rocket Propulsion,4,7
+AERO702,Air Traffic Control & Navigation,3,7
+AERO703,Satellite Technology,3,7
+AERO704,Project Phase I,2,7
+AERO705,Professional Ethics,3,7
+AERO706,Elective I,2,7
+AERO707,Elective II,3,7
+AERO801,Aerospace System Engineering,4,8
+AERO802,Avionics & Flight Control,3,8
+AERO803,Project Phase II,3,8
+AERO804,Comprehensive Viva,2,8
+AERO805,Elective III,3,8
+AERO806,Elective IV,2,8
+AERO807,Entrepreneurship and Innovation,3,8
+MECH101,Engineering Mathematics I,4,1
+MECH102,Engineering Physics,4,1
+MECH103,Engineering Graphics,3,1
+MECH104,Basic Electrical & Electronics,3,1
+MECH105,Computer Programming,3,1
+MECH106,Workshop Practice,2,1
+MECH107,Environmental Science,2,1
+MECH201,Engineering Mathematics II,4,2
+MECH202,Engineering Chemistry,4,2
+MECH203,Engineering Mechanics,3,2
+MECH204,Thermodynamics,3,2
+MECH205,CAD Basics,3,2
+MECH206,Soft Skills I,2,2
+MECH207,Communication English,2,2
+MECH301,Fluid Mechanics,4,3
+MECH302,Strength of Materials,4,3
+MECH303,Manufacturing Technology I,3,3
+MECH304,Machine Drawing,3,3
+MECH305,Instrumentation and Metrology,3,3
+MECH306,Mechanics of Machines,2,3
+MECH307,Aptitude I,2,3
+MECH401,Thermal Engineering I,4,4
+MECH402,Kinematics of Machinery,4,4
+MECH403,Manufacturing Technology II,3,4
+MECH404,Applied Thermodynamics,3,4
+MECH405,Fluid Machinery,3,4
+MECH406,Dynamics Lab,2,4
+MECH407,Soft Skills II,2,4
+MECH501,Design of Machine Elements,4,5
+MECH502,Heat and Mass Transfer,4,5
+MECH503,Mechatronics,3,5
+MECH504,Metallurgy,3,5
+MECH505,Open Elective I,3,5
+MECH506,Thermal Lab,2,5
+MECH507,Aptitude II,2,5
+MECH601,Thermal Engineering II,4,6
+MECH602,Finite Element Analysis,4,6
+MECH603,Design of Transmission Systems,3,6
+MECH604,Vibration & Noise Control,3,6
+MECH605,Open Elective II,3,6
+MECH606,Mini Project,2,6
+MECH607,Soft Skills III,2,6
+MECH701,Automobile Engineering,4,7
+MECH702,Power Plant Engineering,4,7
+MECH703,Robotics and Automation,3,7
+MECH704,Operations Research,3,7
+MECH705,Department Elective I,3,7
+MECH706,Major Project Phase I,2,7
+MECH707,Industrial Training,2,7
+MECH801,Refrigeration and Air Conditioning,4,8
+MECH802,Industrial Engineering,4,8
+MECH803,Renewable Energy Systems,3,8
+MECH804,Department Elective II,3,8
+MECH805,Open Elective III,3,8
+MECH806,Major Project Phase II,2,8
+MECH807,Comprehensive Viva,2,8
+EEE101,Engineering Mathematics I,4,1
+EEE102,Engineering Physics,4,1
+EEE103,Basics of Electrical Engineering,3,1
+EEE104,Engineering Graphics,3,1
+EEE105,Problem Solving Using Python,3,1
+EEE106,Physics Lab,2,1
+EEE107,Environmental Science,2,1
+EEE201,Engineering Mathematics II,4,2
+EEE202,Engineering Chemistry,4,2
+EEE203,Electric Circuits,3,2
+EEE204,Digital Logic Circuits,3,2
+EEE205,Python Programming Lab,2,2
+EEE206,Soft Skills I,2,2
+EEE207,Engineering Practices Lab,2,2
+EEE301,Electrical Machines I,4,3
+EEE302,Analog Electronics,4,3
+EEE303,Electromagnetic Fields,3,3
+EEE304,Measurement and Instrumentation,3,3
+EEE305,Control Systems,3,3
+EEE306,Analog Lab,2,3
+EEE307,Aptitude I,2,3
+EEE401,Electrical Machines II,4,4
+EEE402,Power Electronics,4,4
+EEE403,Microprocessors and Microcontrollers,3,4
+EEE404,Transmission and Distribution,3,4
+EEE405,Electrical Machines Lab,2,4
+EEE406,Soft Skills II,2,4
+EEE407,Microcontroller Lab,2,4
+EEE501,Power System Analysis,4,5
+EEE502,Renewable Energy Systems,4,5
+EEE503,Embedded Systems,3,5
+EEE504,Department Elective I,3,5
+EEE505,Open Elective I,3,5
+EEE506,Power Electronics Lab,2,5
+EEE507,Aptitude II,2,5
+EEE601,Switchgear and Protection,4,6
+EEE602,High Voltage Engineering,4,6
+EEE603,Embedded Systems Lab,2,6
+EEE604,Industrial Automation,3,6
+EEE605,Open Elective II,3,6
+EEE606,Mini Project,2,6
+EEE607,Soft Skills III,2,6
+EEE701,Smart Grid Technologies,4,7
+EEE702,Electric Vehicles,4,7
+EEE703,Department Elective II,3,7
+EEE704,Open Elective III,3,7
+EEE705,Industrial Training,2,7
+EEE706,Major Project Phase I,2,7
+EEE707,Comprehensive Assessment,2,7
+EEE801,Flexible AC Transmission Systems,4,8
+EEE802,Power Quality,4,8
+EEE803,Department Elective III,3,8
+EEE804,Open Elective IV,3,8
+EEE805,Major Project Phase II,2,8
+EEE806,Viva Voce,2,8
+EEE807,Professional Ethics,2,8
+ENGLIS101,History of English Literature I,4,1
+ENGLIS102,Prose and Short Stories,4,1
+ENGLIS103,Introduction to Literary Forms,3,1
+ENGLIS104,Grammar and Composition,3,1
+ENGLIS105,Environmental Studies,2,1
+ENGLIS106,English Language Lab I,2,1
+ENGLIS107,Soft Skills I,2,1
+ENGLIS201,History of English Literature II,4,2
+ENGLIS202,Poetry I: Chaucer to Romantic Age,4,2
+ENGLIS203,Drama I: Elizabethan to Restoration,3,2
+ENGLIS204,Introduction to Linguistics,3,2
+ENGLIS205,Computer Skills,2,2
+ENGLIS206,English Language Lab II,2,2
+ENGLIS207,Soft Skills II,2,2
+ENGLIS301,Indian Writing in English,4,3
+ENGLIS302,Poetry II: Victorian to Modern Age,4,3
+ENGLIS303,Drama II: Modern and Contemporary,3,3
+ENGLIS304,Literary Criticism I,3,3
+ENGLIS305,Aptitude I,2,3
+ENGLIS306,Research Methodology,2,3
+ENGLIS307,English Lab III,2,3
+ENGLIS401,American Literature,4,4
+ENGLIS402,Fiction I: 18th and 19th Century,4,4
+ENGLIS403,Literary Criticism II,3,4
+ENGLIS404,Postcolonial Literature,3,4
+ENGLIS405,Women�s Writing,3,4
+ENGLIS406,Creative Writing Workshop,2,4
+ENGLIS407,Soft Skills III,2,4
+ENGLIS501,World Literature,4,5
+ENGLIS502,Fiction II: 20th Century,4,5
+ENGLIS503,Elective I: Film and Literature,3,5
+ENGLIS504,Elective II: Translation Studies,3,5
+ENGLIS505,Aptitude II,2,5
+ENGLIS506,Literature and Psychology,2,5
+ENGLIS507,Project Proposal,2,5
+ENGLIS601,Contemporary Literary Theory,4,6
+ENGLIS602,Elective III: English for Media,4,6
+ENGLIS603,Elective IV: English for Careers,3,6
+ENGLIS604,Seminar and Viva,3,6
+ENGLIS605,Major Project,3,6
+ENGLIS606,Internship Report,2,6
+ENGLIS607,Comprehensive Assessment,2,6
+BSCMAT101,Calculus I,4,1
+BSCMAT102,Algebra I,4,1
+BSCMAT103,Trigonometry and Geometry,3,1
+BSCMAT104,Statistics I,3,1
+BSCMAT105,Environmental Studies,2,1
+BSCMAT106,Mathematics Lab I,2,1
+BSCMAT107,Soft Skills I,2,1
+BSCMAT201,Calculus II,4,2
+BSCMAT202,Algebra II,4,2
+BSCMAT203,Analytical Geometry,3,2
+BSCMAT204,Statistics II,3,2
+BSCMAT205,Computer Fundamentals,2,2
+BSCMAT206,Mathematics Lab II,2,2
+BSCMAT207,Soft Skills II,2,2
+BSCMAT301,Differential Equations I,4,3
+BSCMAT302,Vector Calculus,4,3
+BSCMAT303,Linear Algebra,3,3
+BSCMAT304,Mathematical Methods,3,3
+BSCMAT305,Aptitude I,2,3
+BSCMAT306,Numerical Methods I,2,3
+BSCMAT307,Mathematics Lab III,2,3
+BSCMAT401,Differential Equations II,4,4
+BSCMAT402,Real Analysis I,4,4
+BSCMAT403,Complex Analysis I,3,4
+BSCMAT404,Mechanics,3,4
+BSCMAT405,Graph Theory,3,4
+BSCMAT406,Numerical Methods II,2,4
+BSCMAT407,Soft Skills III,2,4
+BSCMAT501,Real Analysis II,4,5
+BSCMAT502,Complex Analysis II,4,5
+BSCMAT503,Topology I,3,5
+BSCMAT504,Mathematical Modelling,3,5
+BSCMAT505,Aptitude II,2,5
+BSCMAT506,Optimization Techniques,2,5
+BSCMAT507,Mini Project,2,5
+BSCMAT601,Abstract Algebra,4,6
+BSCMAT602,Topology II,4,6
+BSCMAT603,Number Theory,3,6
+BSCMAT604,Operations Research,3,6
+BSCMAT605,Major Project,3,6
+BSCMAT606,Internship / Seminar,2,6
+BSCMAT607,Comprehensive Assessment,2,6
+BECSE101,Mathematics I,4,1
+BECSE102,Engineering Physics,4,1
+BECSE103,Engineering Chemistry,3,1
+BECSE104,Programming in C,3,1
+BECSE105,Basic Electrical & Electronics,3,1
+BECSE106,C Programming Lab,2,1
+BECSE107,Soft Skills I,2,1
+BECSE201,Mathematics II,4,2
+BECSE202,Digital Logic Design,4,2
+BECSE203,Data Structures,3,2
+BECSE204,Object Oriented Programming,3,2
+BECSE205,Computer Organization,3,2
+BECSE206,Data Structures Lab,2,2
+BECSE207,OOP Lab,2,2
+BECSE301,Discrete Mathematics,4,3
+BECSE302,Database Management Systems,4,3
+BECSE303,Operating Systems,3,3
+BECSE304,Computer Networks,3,3
+BECSE305,Software Engineering,3,3
+BECSE306,DBMS Lab,2,3
+BECSE307,OS Lab,2,3
+BECSE401,Theory of Computation,4,4
+BECSE402,Design and Analysis of Algorithms,4,4
+BECSE403,Web Technologies,3,4
+BECSE404,Microprocessors and Interfacing,3,4
+BECSE405,Data Analytics,3,4
+BECSE406,Web Tech Lab,2,4
+BECSE407,Algorithm Lab,2,4
+BECSE501,Machine Learning,4,5
+BECSE502,Compiler Design,4,5
+BECSE503,Artificial Intelligence,3,5
+BECSE504,Cloud Computing,3,5
+BECSE505,Mobile App Development,3,5
+BECSE506,ML Lab,2,5
+BECSE507,Cloud Lab,2,5
+BECSE601,Cyber Security,4,6
+BECSE602,Blockchain Technology,4,6
+BECSE603,Natural Language Processing,3,6
+BECSE604,Elective I,3,6
+BECSE605,Elective II,3,6
+BECSE606,Blockchain Lab,2,6
+BECSE607,Mini Project,2,6
+BECSE701,Deep Learning,4,7
+BECSE702,IoT and Embedded Systems,4,7
+BECSE703,Software Testing,3,7
+BECSE704,Elective III,3,7
+BECSE705,Elective IV,3,7
+BECSE706,IoT Lab,2,7
+BECSE707,Project Phase I,2,7
+BECSE801,Big Data Technologies,4,8
+BECSE802,Robotics and Automation,3,8
+BECSE803,Elective V,3,8
+BECSE804,Project Phase II,6,8
+BECSE805,Internship / Seminar,3,8
+BECSE806,Comprehensive Viva,2,8
+BECSE807,Soft Skills and Placement Training,2,8

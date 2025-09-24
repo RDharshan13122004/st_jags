@@ -1,0 +1,486 @@
+staff_id,name,email,phone,address,dob,gender,staff_designation
+CSE001,Gaurav Ghose,oliver43@gmail.com,9336002985,"H.No. 00
+Yadav Path, Bidhannagar 302562",1994-09-22,Male,Professor
+CSE002,Damyanti Bedi,bhavanitiwari@gmail.com,8828295985,"76/02, Minhas Road, Bidhannagar-919351",1999-03-06,Male,Lecturer
+CSE003,Qasim Ravi,nkumar@gmail.com,9929759966,"663, Shukla Nagar
+Baranagar 120831",1983-03-11,Female,Assistant Professor
+CSE004,Alexander Pathak,siddharth03@gmail.com,9878360021,"20/80
+Chaudhari Chowk
+Mangalore-646227",1995-07-03,Male,Assistant Professor
+CSE005,Girish Dhawan,reyansh48@gmail.com,9597980975,"H.No. 78
+Devi Road, Rourkela 758014",1991-08-02,Male,Professor
+CSE006,Leena Shankar,pushtioak@gmail.com,8356591908,"H.No. 00, Soni Path, Kadapa-941382",1978-09-14,Female,Assistant Professor
+CSE007,Yochana Nagarajan,rehaandar@gmail.com,7394098684,"077, Wagle, Thrissur 956504",1976-07-07,Male,Assistant Professor
+CSE008,Daniel Om,grewalkrish@gmail.com,8485369995,"46/46, Ganesh Nagar
+Surendranagar Dudhrej-557557",1993-06-14,Female,Assistant Professor
+CSE009,Gaurangi Gola,urishillabatta@gmail.com,8555570539,"21/59
+Bhasin Nagar, Morena 917745",1977-12-27,Male,Professor
+CSE010,Kala Varghese,hdhar@gmail.com,8246312498,"257, Palan Road
+Anand 088193",1997-05-17,Male,Assistant Professor
+CSE011,Veer Mander,gmani@gmail.com,9421796806,"88/136, Parekh Circle
+Jammu 830889",1994-06-19,Female,Professor
+CSE012,Osha Palla,manan00@gmail.com,9148327566,"14/72, Tripathi Marg
+Chennai-061988",1990-10-27,Male,Professor
+CSE013,Dalaja Sama,ronithagarwal@gmail.com,9902266057,"05/180
+Ravel Zila, Suryapet 593954",1985-01-30,Female,Professor
+CSE014,Ethan Jhaveri,smahajan@gmail.com,7070737140,"35
+Dey Zila
+Kavali-423205",1978-10-17,Female,Assistant Professor
+CSE015,Bachittar Gera,reddyekiya@gmail.com,9915327681,"H.No. 898, Prakash Marg
+Avadi 847399",1988-11-14,Female,Professor
+CSE016,Januja Puri,rachitmagar@gmail.com,9245157811,"78, Vyas Marg, Pimpri-Chinchwad 883304",1999-09-26,Female,Assistant Professor
+CSE017,Jasmit Bobal,abha59@gmail.com,8693115661,"874
+Brahmbhatt Marg
+Vasai-Virar 523032",1985-06-21,Female,Assistant Professor
+CSE018,Darika Bir,ramakrishnanryan@gmail.com,7124547435,"14/29, Gara Nagar
+Bhubaneswar 905934",1984-11-30,Male,Professor
+CSE019,Isha Soman,chandran98@gmail.com,9478666891,"H.No. 41
+Soman Road
+Kolkata-597741",1995-12-21,Male,Lecturer
+CSE020,Edhitha Narula,omadan@gmail.com,8843583015,"H.No. 86
+Madan Road
+Udupi-119820",1999-12-17,Female,Assistant Professor
+CSE021,Amara Mani,rehaanbalan@gmail.com,7616799540,"905, Jha Street
+Mehsana 886393",1999-01-11,Female,Professor
+CSE022,Raagini Dhar,nisha54@gmail.com,8229977303,"H.No. 22, Kala Circle, Dharmavaram 891788",1988-09-21,Female,Assistant Professor
+CSE023,Vedant Memon,usha@gmail.com,8523702653,"873
+Padmanabhan Marg
+Vijayanagaram-380438",1985-09-06,Male,Professor
+CSE024,Harini Oza,shravyamuni@gmail.com,8919233498,"91/738, Prashad Nagar, Nagpur-968959",1985-11-02,Male,Lecturer
+CSE025,Parth Agate,adyamanne@gmail.com,7697285733,"96, Uppal, Hazaribagh-747441",1997-05-23,Male,Lecturer
+CSE026,Aarna Purohit,rnarang@gmail.com,7550959123,"H.No. 83
+Basu Nagar, Mango 448088",1987-01-24,Male,Professor
+CSE027,Osha Dayal,gunbir94@gmail.com,7058572002,"H.No. 865, Kalla Path
+Gangtok-337841",1982-12-30,Male,Professor
+CSE028,Zehaan Pai,yachanabose@gmail.com,8742149036,"H.No. 24, Ravel Marg, Bhagalpur 242812",1990-11-03,Female,Assistant Professor
+CSE029,Krishna Wason,chandrannetra@gmail.com,8217430553,"616
+Karan Street, Chandrapur 307839",1987-12-03,Female,Assistant Professor
+CSE030,Jatin Nigam,dhingravritti@gmail.com,9196421596,"231, Krish Chowk
+Bareilly 634820",1993-06-14,Male,Assistant Professor
+BCA001,Nirja Tripathi,oni55@gmail.com,9073334219,"H.No. 19
+Tandon Street, Allahabad-657840",1981-10-28,Female,Assistant Professor
+BCA002,Ayaan Sachdeva,karanmukherjee@gmail.com,9597716711,"08/912, Aurora
+Davanagere 896441",1997-08-17,Female,Professor
+BCA003,Aishani Srinivas,madhavi12@gmail.com,8996863812,"H.No. 00, Mukherjee, Kalyan-Dombivli-233596",1976-10-05,Male,Assistant Professor
+BCA004,Gopal Parsa,dubeyraagini@gmail.com,7426139417,"798
+Bala Chowk, Chandrapur 116429",1983-11-17,Female,Lecturer
+BCA005,Ansh Dubey,manyabalan@gmail.com,8213778057,"12/291, Pal Path
+Ambattur-308275",1988-01-15,Male,Professor
+BCA006,Kavya Chandra,aurorahenry@gmail.com,8066946306,"75, Patla Nagar, Sirsa 561672",1979-11-17,Male,Professor
+BCA007,Upkaar Zacharia,gpandit@gmail.com,9618684645,"44/865
+Shetty Road
+Kalyan-Dombivli-133227",1996-04-07,Female,Lecturer
+BCA008,Anvi Kothari,korpalhemani@gmail.com,7345272419,"H.No. 622
+Ramachandran Marg
+Alwar 363673",1974-11-07,Female,Professor
+BCA009,Chatura Srivastava,daminireddy@gmail.com,7799589430,"H.No. 74
+Sachar Path
+Kollam-740542",1987-07-27,Female,Lecturer
+BCA010,Shravya Sahni,balendrasoni@gmail.com,7448284871,"146
+Varma
+Bahraich 650562",1980-07-18,Female,Lecturer
+BCA011,Dev Loke,onkar38@gmail.com,9377282109,"H.No. 45
+Gaba Circle
+Tumkur 613542",1981-05-21,Male,Lecturer
+BCA012,Mahika Tailor,ydyal@gmail.com,8230625823,"81, Raju Road
+Loni 768365",1976-04-23,Male,Assistant Professor
+BCA013,Devansh Nadkarni,patilmitesh@gmail.com,8692707807,"827
+Saxena Path
+Belgaum-372706",1977-01-22,Male,Lecturer
+BCA014,Madhav Kumar,buchcharita@gmail.com,8353879786,"94
+Tata Marg
+Amroha-912880",1998-09-29,Female,Assistant Professor
+BCA015,Krish Nori,hredhaan28@gmail.com,8155070163,"61/333, Shah Marg, Cuttack-666801",2000-02-26,Male,Professor
+BCA016,Tamanna Dhillon,vasaalexander@gmail.com,7579094798,"07/391
+Chokshi Chowk, Imphal-726740",1997-12-28,Male,Assistant Professor
+BCA017,Wridesh Chahal,hiyer@gmail.com,9970494657,"544, Sule Street, Miryalaguda 271570",1980-01-07,Female,Assistant Professor
+BCA018,Xavier Majumdar,gperi@gmail.com,7274720760,"584
+Sant Path
+Ichalkaranji-231963",1986-04-23,Female,Lecturer
+BCA019,Arunima Sandal,chakrika12@gmail.com,8092769780,"94
+Gupta Street, Gorakhpur-750115",1977-04-24,Female,Lecturer
+BCA020,Hema Krishnan,yashawini55@gmail.com,7490585711,"H.No. 25
+Bhagat Chowk
+Buxar 787536",1983-09-30,Male,Assistant Professor
+BCA021,Onkar Sood,charles03@gmail.com,8694995615,"H.No. 786, Sawhney Nagar
+Gulbarga 646300",1999-09-07,Male,Professor
+BCA022,Idika Mani,borajeet@gmail.com,8084234931,"34/470
+Butala Path
+Begusarai-787247",1976-02-26,Female,Lecturer
+BCA023,Pranit Bhatti,bhandaridhruv@gmail.com,7822603634,"866, Solanki Chowk
+Guwahati-774865",1987-06-02,Female,Assistant Professor
+BCA024,Balendra Sankaran,gautam05@gmail.com,7512380591,"74/897
+Tata Street
+Khora -571857",1980-09-14,Male,Professor
+BCA025,Naveen Dani,xpau@gmail.com,7413235698,"H.No. 23
+Raman Street
+North Dumdum 351059",1998-10-27,Male,Assistant Professor
+BCA026,Ekansh Chaudry,jthakkar@gmail.com,9864627430,"85/604
+Raman Marg, Jalandhar-461127",1981-02-27,Male,Professor
+BCA027,Jack Suresh,ykari@gmail.com,7177893313,"29/356, Sood Street, Nellore-304019",1989-08-29,Female,Professor
+BCA028,Onkar Prasad,ckhatri@gmail.com,8615500546,"H.No. 83, Thakkar Circle, Ramgarh 975241",1993-01-07,Male,Professor
+BCA029,Dayita Maharaj,ishita26@gmail.com,9417032371,"72/63, Dugal Marg
+Jaipur 424262",1988-02-10,Female,Lecturer
+BCA030,Vritti Mammen,kavyabhat@gmail.com,7044113054,"30, Pau Path
+Hindupur-063047",1983-11-16,Male,Professor
+MECH001,Yahvi Rege,dayamaisane@gmail.com,7185779425,"65/034, Wason Nagar, Tiruchirappalli 604549",1976-01-18,Female,Assistant Professor
+MECH002,Oscar Char,sathviksachdeva@gmail.com,9805201530,"98, Raja Nagar
+Bhimavaram-530859",1980-08-08,Male,Assistant Professor
+MECH003,Radhika Kamdar,nkothari@gmail.com,7645084293,"08/11
+Suri Nagar, Bhilai-026230",1982-04-23,Female,Professor
+MECH004,Sneha Kade,madanmadhavi@gmail.com,8012544407,"19/800, Gupta Chowk, Bhiwandi-727441",1978-10-23,Female,Lecturer
+MECH005,Madhavi Warrior,dattavasana@gmail.com,7723215990,"780, Sagar Ganj, Kottayam 138618",1975-05-11,Male,Professor
+MECH006,Hiral Sharma,grewalgaurav@gmail.com,9854512486,"760
+Thakur Zila
+Machilipatnam 495810",1997-10-13,Male,Professor
+MECH007,Nikita Kakar,kaurumang@gmail.com,8778425518,"124
+Sem Path, Khammam-148843",1978-10-16,Male,Assistant Professor
+MECH008,Nathan Dani,vchakraborty@gmail.com,7380704779,"045
+Hans Circle
+Mehsana-363415",1977-10-06,Female,Lecturer
+MECH009,Devika Doctor,cheemaanusha@gmail.com,9082098674,"H.No. 73
+Kata Road
+Naihati-013208",1996-11-20,Female,Professor
+MECH010,Urvi Sastry,raghav85@gmail.com,7539092152,"533
+Sahni Ganj, Amroha 793678",1981-06-28,Female,Lecturer
+MECH011,Reyansh Hari,chatreshsheth@gmail.com,7065532208,"39/810, Solanki Marg
+Jammu 309584",1984-05-13,Male,Assistant Professor
+MECH012,Kai Mitter,echokshi@gmail.com,7650430288,"693
+Chander Marg, Ambarnath-994128",1996-01-09,Male,Assistant Professor
+MECH013,Fitan Vig,rbalay@gmail.com,8658299157,"H.No. 21, Sarma Marg, Deoghar-720183",1994-05-18,Female,Professor
+MECH014,Victor Kapadia,galatarak@gmail.com,7271888361,"71
+Bahl
+Kulti-296930",1996-10-14,Female,Lecturer
+MECH015,Bakhshi Pau,pahuja@gmail.com,7601862090,"53, Babu Street, Alwar-909814",1975-11-26,Male,Lecturer
+MECH016,Quincy Khalsa,xwagle@gmail.com,9206072529,"41/28, Bhakta Marg, Bathinda 754252",1980-12-06,Female,Assistant Professor
+MECH017,Yug Warrior,chandreshparsa@gmail.com,8710032569,"78/364
+Chacko Circle
+Chinsurah-537103",1983-06-25,Female,Assistant Professor
+MECH018,Omisha Narayanan,mrajagopalan@gmail.com,8786122054,"28/598, Vala Road, Vijayawada-655071",1984-11-22,Male,Professor
+MECH019,Rayaan Korpal,muniethan@gmail.com,8418077837,"15/596
+Pandya Zila
+Ahmednagar 074501",1995-03-23,Female,Lecturer
+MECH020,Shravya Shanker,shroffkamya@gmail.com,9761945907,"H.No. 10, Khanna Marg
+Bhimavaram 382163",1999-05-27,Female,Lecturer
+MECH021,Bhavani Sama,omajadate@gmail.com,9438476272,"H.No. 44, Rai Zila
+Kavali-973828",1981-10-18,Male,Professor
+MECH022,Chakradev Sule,keya85@gmail.com,7606885932,"62/005
+Buch Road
+Cuttack 372315",1988-08-13,Female,Professor
+MECH023,Harshil Dass,qsant@gmail.com,8374781357,"34/534, Barman Path
+Ghaziabad-656024",1981-08-28,Male,Lecturer
+MECH024,Harinakshi Kamdar,om32@gmail.com,9667025147,"44/093, Vohra Ganj, Delhi-217801",1986-04-27,Male,Professor
+MECH025,Krish Sem,charvi79@gmail.com,8537820591,"H.No. 935, Lal Circle, Erode-508415",1995-05-19,Male,Professor
+MECH026,Nicholas Sura,pratyush40@gmail.com,7628428458,"88/240, Pathak Chowk
+Mahbubnagar-695264",1999-07-20,Male,Lecturer
+MECH027,Tanmayi Bhagat,hegdecharan@gmail.com,7012846356,"50, Ramachandran Zila
+Salem 272392",1978-02-02,Female,Lecturer
+MECH028,Mitali Borra,tlall@gmail.com,7688823452,"74/98, Krish Ganj, Aizawl 789750",1991-12-10,Female,Professor
+MECH029,Krishna Muni,bkant@gmail.com,9550265564,"69
+Devan Zila, Udupi-535824",1985-09-17,Male,Lecturer
+MECH030,Nicholas More,abdulbala@gmail.com,8268915780,"H.No. 47, Bala Road, Aurangabad-676035",1977-04-01,Male,Assistant Professor
+AERO001,Meera Garg,unagar@gmail.com,9151273055,"574, Misra Marg
+Khora  040640",1981-08-19,Female,Professor
+AERO002,Vrinda Madan,onveershanker@gmail.com,8221222546,"415
+Pai Ganj, Bidhannagar 197117",1981-03-08,Male,Professor
+AERO003,Advika Lalla,jsabharwal@gmail.com,7932614826,"H.No. 05
+Gade Ganj, Dehri-787476",1981-03-07,Female,Assistant Professor
+AERO004,Tanay Chad,nsavant@gmail.com,8932972173,"81
+Sachdeva Chowk, Rourkela 604832",1997-02-06,Male,Professor
+AERO005,Niharika Hayer,isha65@gmail.com,7470129958,"H.No. 336
+Gade Chowk, Uluberia-335202",1997-10-01,Male,Lecturer
+AERO006,Priya Dara,kkrishnan@gmail.com,8005635597,"14/220
+Sankaran Chowk
+Rajahmundry-810138",1997-01-07,Male,Professor
+AERO007,Liam Ahluwalia,benjagvi@gmail.com,9666869442,"72
+Thaman Street
+Raipur 986916",1975-01-09,Female,Assistant Professor
+AERO008,Harini Tank,lukeprasad@gmail.com,8169289947,"H.No. 04
+Patil Road, Kanpur 230461",1992-08-27,Female,Lecturer
+AERO009,Gaurangi Kakar,benjamin18@gmail.com,8444733133,"11/92
+Cheema Ganj
+Vadodara-419080",1998-10-14,Female,Lecturer
+AERO010,Diya Srinivas,jagat69@gmail.com,7137778596,"563
+Sahni Ganj, Nizamabad-094552",1994-09-06,Male,Lecturer
+AERO011,Faras Johal,chhabratristan@gmail.com,7880228155,"16/95
+Merchant Street
+Patna-700899",1978-04-24,Female,Professor
+AERO012,Gaurav Ravel,darbishakha@gmail.com,7783521055,"51/036, Golla Zila, Bidar-984341",1988-09-12,Male,Lecturer
+AERO013,Diya Pingle,mandoeshi@gmail.com,9287768922,"072, Brahmbhatt Marg
+Purnia-751211",1995-03-23,Male,Professor
+AERO014,Falguni Chaudhry,chaaya07@gmail.com,9373690060,"43
+Shankar Road
+Ichalkaranji-394107",1975-10-14,Male,Lecturer
+AERO015,Ronith Chaudhary,chaitaly43@gmail.com,8106535207,"18, Chada Ganj, Malegaon 234051",1982-12-29,Female,Professor
+AERO016,Balendra Khare,pranitdhar@gmail.com,7186165811,"39
+Bassi Nagar
+Srikakulam 426439",1996-02-25,Male,Assistant Professor
+AERO017,Mitesh Parsa,krishna69@gmail.com,9178460967,"15/86, Dhar Ganj, Malda-079472",1993-07-11,Female,Assistant Professor
+AERO018,Januja Korpal,upasna74@gmail.com,9576019883,"H.No. 21, Mahal Ganj, Ghaziabad 033989",1991-05-24,Male,Assistant Professor
+AERO019,Anika Iyengar,oliver98@gmail.com,8037964848,"H.No. 267
+Chawla Nagar
+Vasai-Virar-283173",1993-11-15,Female,Lecturer
+AERO020,Pahal Kar,samuel69@gmail.com,8625994543,"56/808
+Krishnamurthy Path, Bally 852803",1991-03-04,Male,Assistant Professor
+AERO021,Damini Brahmbhatt,aashimaharaj@gmail.com,7262275115,"H.No. 86, Loke Circle
+Jabalpur 024484",1984-12-24,Male,Lecturer
+AERO022,Hemal Bajwa,balendrahora@gmail.com,9508513609,"19/46, Chopra Ganj
+Agartala 441115",1978-01-26,Male,Lecturer
+AERO023,Amaira Dugar,lipika77@gmail.com,9977699534,"71
+Rao Street, Ludhiana 403197",1985-12-21,Male,Professor
+AERO024,Ikbal Khurana,srinivasharrison@gmail.com,7596232567,"87/99, Brahmbhatt Zila
+Raebareli 926834",1993-10-20,Female,Assistant Professor
+AERO025,Nidhi Natarajan,trivenimurty@gmail.com,9394416057,"H.No. 64
+Nazareth Zila
+Amroha 989732",1984-09-19,Male,Assistant Professor
+AERO026,Aahana Sathe,kbumb@gmail.com,7728199085,"71, Chandran Road, Ichalkaranji-041809",1993-07-21,Male,Professor
+AERO027,Praneel Sankar,udyati38@gmail.com,8054571779,"993, Mahajan Zila, Tadepalligudem-424261",1977-03-13,Female,Assistant Professor
+AERO028,Upasna Edwin,qsekhon@gmail.com,9070681744,"H.No. 087, Koshy Path
+Raipur-112823",1988-11-04,Female,Professor
+AERO029,Gaurang Borde,boratarak@gmail.com,9098696576,"H.No. 632, Sodhi Street
+Malegaon 478495",1985-04-09,Male,Lecturer
+AERO030,Kabir Vig,hparmer@gmail.com,8250399647,"30/597, Dash
+Malda-202912",1997-08-02,Female,Lecturer
+BSCM001,Damini Som,samuelbarad@gmail.com,9615201690,"94
+Wali Ganj, Bettiah-895177",1982-09-15,Female,Professor
+BSCM002,Rayaan Vora,gloyal@gmail.com,7533685260,"443
+Narayan Road
+Thiruvananthapuram 017606",1981-04-26,Female,Professor
+BSCM003,Jhalak Doshi,chopravarsha@gmail.com,8001847112,"H.No. 238
+More Nagar
+Sultan Pur Majra 314869",1987-12-11,Male,Assistant Professor
+BSCM004,Chandani Balakrishnan,xalak87@gmail.com,7906248000,"77/65, Narula Street
+Panchkula 177615",2000-05-15,Female,Lecturer
+BSCM005,Widisha Bath,vdevi@gmail.com,8641987649,"75/139
+Bhakta Street, Ramgarh 715859",1991-07-19,Male,Assistant Professor
+BSCM006,Jagdish Kothari,mmahal@gmail.com,7891958467,"970
+Gulati Street, Malda-755522",1976-02-16,Male,Assistant Professor
+BSCM007,Tanmayi Raghavan,umand@gmail.com,8746408804,"62/520
+Kalla Road
+Ambarnath-253179",1999-03-13,Male,Assistant Professor
+BSCM008,Zaitra Mukherjee,sbose@gmail.com,8508022636,"H.No. 22
+Bhargava Path
+Uluberia 529980",1984-04-21,Male,Professor
+BSCM009,Anmol Purohit,anvichhabra@gmail.com,8682766432,"14/04, Kaur Ganj
+Unnao 567222",1974-10-23,Female,Assistant Professor
+BSCM010,Jagat Bose,bhanumatidada@gmail.com,9479572454,"66, Seshadri Street
+Amroha 340739",1990-08-12,Female,Assistant Professor
+BSCM011,Matthew Prashad,ovarty@gmail.com,9460356314,"H.No. 25
+Kari Zila
+Korba 015201",1975-12-28,Female,Assistant Professor
+BSCM012,Rachana Tella,shanazaan@gmail.com,9427004135,"28/076, Kata Marg, Bhagalpur-558119",1982-03-20,Female,Lecturer
+BSCM013,Shravya Lall,rayaan06@gmail.com,9018939232,"H.No. 02, Din Marg, Phagwara 939842",1977-06-24,Male,Lecturer
+BSCM014,Hritik Kalita,chaturasha@gmail.com,9205368057,"H.No. 136, Kata Road
+Karawal Nagar-352712",1998-07-24,Male,Professor
+BSCM015,Pahal Devi,magarpallavi@gmail.com,8355019562,"392
+Sachar Ganj
+Raipur-301346",1986-01-28,Male,Assistant Professor
+BSCM016,Tanvi Sheth,orinder43@gmail.com,8744693893,"277
+Vig Chowk, Gulbarga 971368",1987-10-19,Male,Professor
+BSCM017,Ishani Vora,gilldominic@gmail.com,9387529281,"52/476
+Chana
+North Dumdum-691754",1997-07-31,Female,Professor
+BSCM018,Gaurangi Suri,vargheseoeshi@gmail.com,7343884182,"34/773
+Nath Nagar
+Berhampore-693583",1980-12-14,Female,Assistant Professor
+BSCM019,Ati Bhattacharyya,girish84@gmail.com,9365015392,"908, Korpal Street, Dhule 553217",1975-04-18,Female,Lecturer
+BSCM020,Aarna Bumb,jkapadia@gmail.com,9900619297,"H.No. 09, Krishna Street
+Kulti 571973",1976-05-06,Female,Professor
+BSCM021,Mohini Kata,patlainaya@gmail.com,8707829387,"H.No. 26
+Krishnamurthy
+Sasaram 407217",1975-12-04,Male,Professor
+BSCM022,Nicholas Raju,mkapadia@gmail.com,9204698019,"319, Balakrishnan Zila
+Guna 975740",1980-11-05,Male,Lecturer
+BSCM023,Krisha Pingle,kaulharsh@gmail.com,7908040172,"90
+Thaman Nagar
+Coimbatore-875715",1984-04-21,Male,Lecturer
+BSCM024,Om Verma,omajakamdar@gmail.com,9161539552,"H.No. 662
+Karpe Road, Parbhani-053711",1989-11-17,Male,Lecturer
+BSCM025,Chavvi Hayre,chadyashica@gmail.com,7654324040,"13/66
+Agate Chowk, North Dumdum 435783",1984-07-27,Male,Lecturer
+BSCM026,Aradhana Pai,malltriya@gmail.com,7722375452,"05/76
+Thakur Nagar
+Dehri 325033",1977-08-11,Female,Professor
+BSCM027,Ganga Chaudhari,benjaminkapur@gmail.com,8710013747,"H.No. 817, Mahajan Ganj, Durg 534032",1989-10-13,Male,Professor
+BSCM028,Praneel Lal,edhitharatti@gmail.com,9572586298,"211
+Dhillon, Moradabad-173209",1988-01-29,Female,Lecturer
+BSCM029,Faraj Wali,bahadurjit36@gmail.com,7854896008,"70
+Ben Path
+Satna 742904",1978-03-28,Female,Lecturer
+BSCM030,Jack Shere,forumbava@gmail.com,8094760158,"H.No. 45, Saha Nagar, Surendranagar Dudhrej-184621",1984-12-20,Female,Assistant Professor
+EEE001,Odika Bhakta,reddychaitanya@gmail.com,9028508336,"H.No. 395, Thakur Circle, North Dumdum-999707",1983-05-06,Female,Professor
+EEE002,Gaurika Andra,ebabu@gmail.com,7874397706,"36, Kara Path
+Etawah 741051",1997-03-29,Female,Professor
+EEE003,Bhavani Singh,goyalaarav@gmail.com,9559217727,"H.No. 47
+Dey Path, Ujjain-899147",1978-06-27,Male,Assistant Professor
+EEE004,Amaira Peri,forum61@gmail.com,7016387824,"94/369
+Bath Road, Munger 867700",1980-09-17,Female,Professor
+EEE005,Vidhi Chhabra,meera33@gmail.com,8776913832,"H.No. 238, Tripathi Path
+Gandhidham 855043",1991-12-21,Female,Professor
+EEE006,Ucchal Tiwari,fpatel@gmail.com,8876288482,"37/77
+Zacharia Chowk, Khandwa 240349",1995-12-27,Male,Lecturer
+EEE007,Sara Savant,cherianlakshmi@gmail.com,7222474877,"879
+Varkey Path, Tumkur 219715",1994-12-09,Male,Professor
+EEE008,Ekbal Kaur,pdani@gmail.com,8849893344,"133
+Comar Chowk, Ajmer 260909",1977-06-14,Male,Professor
+EEE009,Nirja Rastogi,mason07@gmail.com,9054573813,"41/336
+Pau Chowk
+Ludhiana 781322",2000-02-22,Female,Assistant Professor
+EEE010,Yauvani Dixit,michael56@gmail.com,8429898021,"54/683
+Keer Nagar, Bongaigaon 029403",1987-01-31,Female,Professor
+EEE011,Vamakshi Nadkarni,patlakeya@gmail.com,8304681694,"30
+Mukhopadhyay Road, Pondicherry 453537",1979-08-21,Female,Assistant Professor
+EEE012,Qasim Seth,rishi05@gmail.com,7455116760,"59
+Bhavsar Chowk, Jodhpur-854922",1983-02-01,Female,Professor
+EEE013,Falan Swamy,qdara@gmail.com,7041188308,"H.No. 06
+Chopra Chowk, Nellore 578752",1993-12-27,Male,Lecturer
+EEE014,Girindra Baria,nicholasom@gmail.com,9664446859,"011, Chandran Chowk, Howrah 922309",1980-03-05,Male,Assistant Professor
+EEE015,Megha Chana,ishwarvirk@gmail.com,8950338968,"H.No. 822
+Vohra Road, Chandigarh-506847",1989-10-13,Female,Lecturer
+EEE016,Hardik Rege,orinder93@gmail.com,7609496347,"11
+Sidhu Chowk
+Phusro-337163",1976-09-11,Male,Assistant Professor
+EEE017,Warjas Hegde,wahabtoor@gmail.com,7889943746,"H.No. 98, Mahajan Circle, Tadipatri 340955",1981-02-06,Female,Assistant Professor
+EEE018,Isaac Dugar,raghav54@gmail.com,7993937620,"60, Master Zila, Saharanpur 924857",1990-01-01,Female,Professor
+EEE019,Wriddhish Rana,tanvibandi@gmail.com,7629811892,"88/28
+Warrior Street
+Sangli-Miraj & Kupwad-745584",1977-09-21,Male,Lecturer
+EEE020,Ganga Shan,ddoctor@gmail.com,9456198274,"H.No. 90, Ramesh Zila, Jaipur 851489",1988-03-13,Female,Assistant Professor
+EEE021,Timothy Borde,raksha74@gmail.com,8167858835,"27/73
+Mitter Nagar, Meerut 785211",1988-08-10,Female,Professor
+EEE022,Bakhshi Bhattacharyya,oeshi53@gmail.com,9099764735,"08/01
+Chaudhuri Road
+Khora  367382",1997-03-27,Female,Assistant Professor
+EEE023,Yahvi Chadha,tmadan@gmail.com,7902862865,"H.No. 239
+Kashyap, Jamnagar-277003",1999-08-04,Female,Lecturer
+EEE024,Balveer Nayar,pooja11@gmail.com,8253783261,"H.No. 04, Bora
+Gudivada-559724",1997-02-10,Male,Lecturer
+EEE025,Wriddhish Chauhan,wpal@gmail.com,8550635162,"H.No. 720
+Dixit Chowk
+Pimpri-Chinchwad-158011",1990-12-06,Male,Assistant Professor
+EEE026,Jalsa Chaudhuri,vedikasanghvi@gmail.com,9971125916,"047
+Choudhry Nagar
+Raipur 145186",1985-03-16,Male,Assistant Professor
+EEE027,Kiaan Nath,sameshsanghvi@gmail.com,9735976327,"H.No. 68
+Vig Path
+Sultan Pur Majra-696633",1989-08-22,Male,Professor
+EEE028,Hema Walla,kundayochana@gmail.com,8691385913,"531, Buch Street, Nanded 300408",1976-08-05,Male,Assistant Professor
+EEE029,Hemang Singhal,zilmilpadmanabhan@gmail.com,9592858820,"573, Thakur Marg, Giridih 898711",1991-07-21,Male,Assistant Professor
+EEE030,Girik Pai,athakkar@gmail.com,8769252144,"381, Venkatesh Circle, Surat-671362",1992-07-26,Female,Assistant Professor
+ENG001,Shaurya Agarwal,wnath@gmail.com,9603918692,"25/970
+Balasubramanian Street, Kalyan-Dombivli-052989",1984-10-02,Male,Lecturer
+ENG002,Bishakha Chopra,deychandresh@gmail.com,8136707456,"H.No. 134, Sood Nagar
+Tenali-278819",1985-08-20,Male,Lecturer
+ENG003,Yutika Yadav,saumyachakrabarti@gmail.com,8240852674,"92/372, Dalal Road
+Haldia 342521",1998-09-07,Male,Assistant Professor
+ENG004,Idika Vora,imanne@gmail.com,7632127843,"13, Dani Circle
+Ambarnath 400904",1995-04-11,Female,Assistant Professor
+ENG005,Dalbir Sami,solankikala@gmail.com,9635514488,"H.No. 697, Dhar Marg
+Chinsurah 018430",1991-02-12,Male,Lecturer
+ENG006,Yachana Sharma,adweta15@gmail.com,8975262824,"589, Balasubramanian Street, Chapra-639003",1993-08-19,Female,Assistant Professor
+ENG007,Gayathri Kothari,shankerjeevika@gmail.com,7630679135,"H.No. 32, Pandit Nagar, Ramagundam-939398",1990-09-24,Male,Lecturer
+ENG008,Andrew Bal,mitalibuch@gmail.com,8915221076,"93/81
+Sarin Path
+Ballia 147340",1978-04-18,Female,Assistant Professor
+ENG009,Qushi Venkatesh,bvenkatesh@gmail.com,9383366437,"18/935
+Shere Street
+Pudukkottai 805087",1980-04-07,Male,Assistant Professor
+ENG010,Warda Krish,chaitanya03@gmail.com,8277923954,"27/52, Pillai Nagar
+Faridabad-939219",1978-11-29,Female,Assistant Professor
+ENG011,Yauvani Kanda,mayamangal@gmail.com,8422238469,"H.No. 11, Bath
+Rohtak-820545",1995-03-30,Male,Professor
+ENG012,Kritika Sankar,hray@gmail.com,7975679895,"98/237, Master Street
+Bokaro 861248",1976-12-30,Female,Assistant Professor
+ENG013,Chandran Bhatti,kalpit93@gmail.com,7932708846,"H.No. 079, Sankaran Nagar, Aurangabad 576675",1989-04-18,Female,Professor
+ENG014,Forum Bhardwaj,pratyush00@gmail.com,8505337028,"970
+Mody Street
+Anantapur 439759",1998-11-06,Female,Assistant Professor
+ENG015,Manya Bhalla,vasudhadhingra@gmail.com,8014889295,"H.No. 984
+Bansal Path, New Delhi-389583",1986-06-22,Female,Assistant Professor
+ENG016,Manbir Ganguly,aprakash@gmail.com,9013683402,"41, Raghavan
+Dewas-318484",1994-01-11,Male,Assistant Professor
+ENG017,Forum Krish,alka40@gmail.com,7437535031,"89
+Raman Ganj, Gorakhpur-021649",2000-06-11,Male,Professor
+ENG018,Aarna Ramaswamy,darpan47@gmail.com,7861120657,"H.No. 244
+Varghese Circle
+Ambarnath 140377",1980-12-09,Female,Assistant Professor
+ENG019,Tanay Bhat,nagitarak@gmail.com,7193041019,"68
+Mandal Marg, Kanpur 410647",1987-07-28,Female,Professor
+ENG020,Advika Basu,jmistry@gmail.com,9471837954,"H.No. 23
+Srinivas Nagar, Raipur 516947",1977-01-05,Female,Lecturer
+ENG021,Bachittar Thaker,srivastavadipta@gmail.com,8468661684,"12/368, Borah Chowk
+Suryapet-599278",1985-04-24,Male,Assistant Professor
+ENG022,Bakhshi Ranganathan,yagneshparsa@gmail.com,7607886424,"H.No. 855
+Anne Path
+Bulandshahr 388470",1983-12-26,Male,Assistant Professor
+ENG023,Ethan Jha,amara83@gmail.com,9271807836,"86, Pathak Marg
+Kulti-017523",1981-05-09,Male,Lecturer
+ENG024,Indira Dubey,ekajawagle@gmail.com,8594826833,"H.No. 89
+Vala Path, Kadapa-553002",1987-06-22,Male,Professor
+ENG025,Waida Shankar,ybarman@gmail.com,9537256305,"72/003
+Dada Zila, Satna-920616",1986-04-30,Female,Lecturer
+ENG026,Aarnav Gulati,vanshaedwin@gmail.com,8028487368,"H.No. 347, Bhasin Street, Giridih 775514",1984-03-22,Male,Assistant Professor
+ENG027,Umang Setty,zansi05@gmail.com,7553467585,"702
+Cherian Road, Rohtak 559664",1999-04-28,Male,Professor
+ENG028,Aayush Boase,omyakannan@gmail.com,9279829947,"H.No. 175
+Modi Ganj, Srinagar 166045",1982-02-24,Female,Professor
+ENG029,Arin Dhaliwal,fariqsaraf@gmail.com,7150991352,"868, Ramanathan Nagar
+Aurangabad-623026",1981-08-16,Female,Assistant Professor
+ENG030,Laban Salvi,hredhaan13@gmail.com,7448740489,"25/101, Sathe Zila, Saharsa 807611",1978-06-30,Female,Lecturer
+BAA001,Zaid Savant,udyatibahl@gmail.com,7948389437,"50/569
+Nagar Street, Tiruvottiyur-762290",1979-05-09,Male,Lecturer
+BAA002,Charvi Tank,xtandon@gmail.com,8044814951,"H.No. 08
+Sawhney Chowk
+Sasaram-016749",1975-03-20,Female,Professor
+BAA003,Caleb Joshi,karnikojas@gmail.com,7520569752,"80/598
+Mistry Street, Rohtak 899437",1979-03-28,Female,Assistant Professor
+BAA004,Charles Chaudhari,reddyqadim@gmail.com,9340864794,"65/616, Merchant Marg, Orai 233676",1996-05-20,Female,Professor
+BAA005,Rachit Wagle,saneyoshita@gmail.com,9469425127,"65/865, Agate Circle, Muzaffarpur-461217",1982-05-30,Male,Professor
+BAA006,Madhav Sastry,dominicsunder@gmail.com,9212279489,"30/86
+Om Zila
+Allahabad 580560",1991-02-24,Male,Lecturer
+BAA007,Samar Shankar,vanyaprakash@gmail.com,8849895154,"10
+Prabhu Circle, Panvel-013709",1999-01-25,Female,Professor
+BAA008,Raghav Shukla,mahalkrishna@gmail.com,9769887299,"H.No. 236, Shere Chowk, Raurkela Industrial Township-935578",1997-07-18,Male,Professor
+BAA009,Warinder Tripathi,zkurian@gmail.com,8088424688,"537
+Dhillon Road, Bettiah 151386",1997-07-18,Male,Professor
+BAA010,Chavvi Pillai,akarnik@gmail.com,8086978627,"H.No. 677, Som Chowk
+Raiganj 207726",1998-01-18,Male,Lecturer
+BAA011,Warda Pingle,meghasule@gmail.com,9599013438,"H.No. 743
+Dyal Ganj
+Raurkela Industrial Township 162266",1975-02-07,Female,Assistant Professor
+BAA012,Urmi Thaker,tailornisha@gmail.com,8798655402,"06
+Ahluwalia Road, Bahraich-877275",1982-04-15,Female,Professor
+BAA013,Vedhika Menon,rdoshi@gmail.com,7778036269,"700
+Gara Chowk, Hindupur 688649",1975-05-22,Female,Assistant Professor
+BAA014,Udyati Vig,dyalnathan@gmail.com,9873948000,"H.No. 70
+Agate Chowk, Tenali-887035",1978-12-05,Male,Professor
+BAA015,Gagan Gill,royekantika@gmail.com,9289541519,"27/66, Om Road
+Jamnagar 042918",1990-09-11,Male,Lecturer
+BAA016,Aditya Dhar,irama@gmail.com,7449061505,"55/30, Mahajan, Kurnool-480936",1990-10-28,Male,Lecturer
+BAA017,Janya Batra,lekhahayer@gmail.com,8073291154,"03, Parekh Marg, Shimla 801080",1993-01-13,Male,Professor
+BAA018,Andrew Dube,pmane@gmail.com,8679882861,"70, Prabhu Path, Suryapet 712270",1985-01-12,Male,Lecturer
+BAA019,Chasmum Andra,galatheodore@gmail.com,8392661943,"H.No. 529
+Magar Path
+Tadipatri-955632",1985-06-05,Male,Assistant Professor
+BAA020,Keya Aggarwal,gadebhavya@gmail.com,8613900022,"18/737, Mitter Nagar, Berhampur 653313",1999-12-16,Female,Lecturer
+BAA021,Ranbir Shan,amaira37@gmail.com,7735130103,"29/62
+Parmar Path
+Bongaigaon 760341",1997-02-10,Female,Professor
+BAA022,Gautami Atwal,yaminichacko@gmail.com,9637986037,"H.No. 499, Sood Chowk, Kanpur 878185",1990-12-03,Male,Professor
+BAA023,Chaaya Dhingra,ekantamenon@gmail.com,8691268669,"H.No. 115, Mann Zila
+Vellore 208566",1980-07-27,Male,Professor
+BAA024,Udyati Aggarwal,nirja15@gmail.com,8327698527,"H.No. 61
+Om Street
+Giridih-951046",1991-05-26,Male,Assistant Professor
+BAA025,Luke Comar,advaithgoel@gmail.com,7159765862,"H.No. 047, Goda Ganj, Morbi-940329",1995-11-19,Female,Assistant Professor
+BAA026,Avi Pai,memonmegha@gmail.com,7517584433,"H.No. 117
+Goyal Road, Vellore 247843",1998-02-11,Female,Assistant Professor
+BAA027,Aditya Gole,ramaswamybhavani@gmail.com,9725855016,"H.No. 52
+Pal Ganj
+Ballia 184272",1991-06-18,Male,Professor
+BAA028,Balhaar Hayer,waliakrisha@gmail.com,7573916942,"15/64, Bail Path
+Purnia 438986",1993-04-18,Female,Assistant Professor
+BAA029,Reva Subramanian,samesh99@gmail.com,9898960442,"H.No. 023, Puri Ganj, Ambattur-231605",1983-12-17,Female,Professor
+BAA030,Ekaja Sen,priyagera@gmail.com,7777564106,"89/16, Bhat
+Karaikudi 706130",1992-09-23,Male,Assistant Professor
